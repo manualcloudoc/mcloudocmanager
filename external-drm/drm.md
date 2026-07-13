@@ -41,4 +41,4 @@
 >
 > <img src="../.gitbook/assets/img_004 (84).png" alt="" data-size="original">
 
-> ![Notes](<../.gitbook/assets/img_005 (71).png>)DiskLock 콘솔에서 로컬저장금지 정책을 생성하고 편집하는 방법은 \*\*[DiskLock 콘솔에서 로컬저장금지 정책 생성 및 편집하기](../disklock/disklock/console/disklock-1.md)\*\*를 참고하세요.
+> ![Notes](<../.gitbook/assets/img_005 (71).png>)DiskLock 콘솔에서 로컬저장금지 정책을 생성하고 편집하는 방법은 \*\*[DiskLock 콘솔에서 로컬저장금지 정책 생성 및 편집하기](../disklock/disklock/disklock/disklock.md)\*\*를 참고하세요.

@@ -25,4 +25,4 @@
 
 3\.   설정된 정책의 수정이 필요한 경우, **정책 편집** 버튼을 클릭한 후 DiskLock 콘솔에서 해당 정책을 편집합니다.&#x20;
 
-![Notes](<../../.gitbook/assets/img_004 (80).png>)로컬저장금지 정책을 생성하고 편집하는 방법은[**DiskLock 콘솔에서 로컬저장금지 정책 생성 및 편집하기**](../../disklock/disklock/console/disklock-1.md) 참고합니다.
+![Notes](<../../.gitbook/assets/img_004 (80).png>)로컬저장금지 정책을 생성하고 편집하는 방법은[**DiskLock 콘솔에서 로컬저장금지 정책 생성 및 편집하기**](../../disklock/disklock/disklock/disklock.md) 참고합니다.

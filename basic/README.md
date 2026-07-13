@@ -1,5 +1,5 @@
 ---
-description: Category for Basic module
+description: 문서중앙화 솔루션 기본 기능에 대한 설명입니다.
 ---
 
 # Basic
@@ -103,12 +103,12 @@ description: Category for Basic module
 
 ### **사용자 로그인 제어하기**
 
-* [**사용자 로그인을 제어하는 방법**](undefined-12/undefined.md)
+* [**사용자 로그인을 제어하는 방법**](undefined-12/)
 * [**IP대역에 따라 사용자별로 로그인 제어하기**](undefined-12/ip.md)
 * [**IP대역에 따라 에이전트별로 사용자 로그인 제어하기**](undefined-12/ip-1.md)
 * [**2단계 인증을 통해 사용자 로그인 제어하기**](undefined-12/2.md)
 * [**MAC주소 인증을 통해 윈도우 에이전트 로그인 제어하기**](undefined-12/mac.md)
-* [**관리자가 모바일 기기 등록 및 관리하는 방법**](undefined-12/undefined-1.md)
+* [**관리자가 모바일 기기 등록 및 관리하는 방법**](undefined-12/undefined.md)
 * [**Mac 기기 등록 및 관리하기**](undefined-12/mac-1.md)
 
 ### **문서함 관리하기**

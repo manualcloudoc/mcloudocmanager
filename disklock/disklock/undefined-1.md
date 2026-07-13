@@ -57,5 +57,5 @@
 | FullAccess Applications> System> Miscellaneous Utilities> Compress>WinZip  | WINZIP32.EXE |
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-애플리케이션 카테고리는DiskLock 콘솔에서 설정할 수 있습니다. DiskLock 콘솔에서 애플리케이션 카테고리를 설정하는 방법은 [**DiskLock 콘솔에서 애플리케이션 카테고리 관리하기**](console/mgmtcategory.md)를 참고합니다.
+애플리케이션 카테고리는DiskLock 콘솔에서 설정할 수 있습니다. DiskLock 콘솔에서 애플리케이션 카테고리를 설정하는 방법은 [**DiskLock 콘솔에서 애플리케이션 카테고리 관리하기**](disklock/mgmtcategory.md)를 참고합니다.
 {% endhint %}

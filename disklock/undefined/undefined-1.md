@@ -28,7 +28,7 @@
 1. PC로그 정책
 2. 외부DRM 정책
 
-![Notes](<../../.gitbook/assets/img_001 (119).png>)스마트폰 제어(MTP) 정책은 윈도우 탐색기에서MTP(Multimedia Transfer Protocol) 방식의 외장메모리로 표시되는 스마트폰에 대한 읽기와 쓰기를 통제하는 정책으로, 읽기/쓰기 허용, 읽기만 허용, 읽기/쓰기 차단 중 선택할 수 있습니다.![Notes](<../../.gitbook/assets/img_002 (103).png>)DiskLock 정책 중 로컬저장금지 정책, 탐색기 복사/이동 정책 및 보안디스크 정책의 적용은 DiskLock 콘솔에서 수행할 수 있습니다. 자세한 사항은\*\*[로컬저장금지 정책 적용하기](../disklock/console/disklock-3.md)**,** [**탐색기 복사/이동 정책 적용하기**](../disklock/console/disklock-7.md)**,**[보안디스크 정책 설정 및 적용하기](../disklock/console/disklock-6.md)\*\*를 참고하세요.&#x20;
+![Notes](<../../.gitbook/assets/img_001 (119).png>)스마트폰 제어(MTP) 정책은 윈도우 탐색기에서MTP(Multimedia Transfer Protocol) 방식의 외장메모리로 표시되는 스마트폰에 대한 읽기와 쓰기를 통제하는 정책으로, 읽기/쓰기 허용, 읽기만 허용, 읽기/쓰기 차단 중 선택할 수 있습니다.![Notes](<../../.gitbook/assets/img_002 (103).png>)DiskLock 정책 중 로컬저장금지 정책, 탐색기 복사/이동 정책 및 보안디스크 정책의 적용은 DiskLock 콘솔에서 수행할 수 있습니다. 자세한 사항은\*\*[로컬저장금지 정책 적용하기](../disklock/disklock/disklock-2.md)**,** [**탐색기 복사/이동 정책 적용하기**](../disklock/disklock/disklock-6.md)**,**[보안디스크 정책 설정 및 적용하기](../disklock/disklock/disklock-5.md)\*\*를 참고하세요.&#x20;
 
 ## 모듈 개별정책 적용하기
 
