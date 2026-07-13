@@ -1,5 +1,5 @@
 ---
-description: Category for System
+description: 문서중앙화 시스템에 대한 설명입니다.
 ---
 
 # System
