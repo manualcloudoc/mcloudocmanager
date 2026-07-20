@@ -15,7 +15,7 @@
 {% endhint %}
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-사용자가 데이터 인계 기능을 사용하는 방법은 **사용자 매뉴얼**- [**데이터 인계 기능 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-1/undefined)의 내용을 참고하세요.&#x20;
+사용자가 데이터 인계 기능을 사용하는 방법은 **사용자 매뉴얼**- [**데이터 인계 기능 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined)의 내용을 참고하세요.&#x20;
 {% endhint %}
 
 데이터 인계 기능은 웹 메뉴에서만 제공되고 윈도우 에이전트에서는 제공되지 않습니다. 웹 메뉴에서 특정 사용자의 개인 문서함 데이터를 다른 사용자에게 인계하는 방법은 다음과 같습니다.

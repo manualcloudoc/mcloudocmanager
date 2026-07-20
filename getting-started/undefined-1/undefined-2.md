@@ -113,7 +113,7 @@
 {% endhint %}
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-생성한 폴더에서 **폴더관리자**를 지정하면, 이후 폴더관리자가 서비스관리자를 대신하여 하위 폴더를 생성하고 권한을 설정하는 등 해당 폴더의 관리 업무를 수행할 수도 있습니다. 자세한 내용은 [**폴더관리자 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined-1)를 참고합니다. 
+생성한 폴더에서 **폴더관리자**를 지정하면, 이후 폴더관리자가 서비스관리자를 대신하여 하위 폴더를 생성하고 권한을 설정하는 등 해당 폴더의 관리 업무를 수행할 수도 있습니다. 자세한 내용은 [**폴더관리자 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-1)를 참고합니다. 
 {% endhint %}
 
 #### 다단계 구성에서 폴더 권한 설정하기

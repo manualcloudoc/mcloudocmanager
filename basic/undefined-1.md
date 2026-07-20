@@ -36,7 +36,7 @@
 
 서비스관리자는 부서문서함 내 임의의 폴더에 대해 특정 사용자를 폴더관리자로 지정하여 해당 폴더의 관리 권한을 위임할 수 있습니다.  폴더관리자는 서비스관리자를 대신하여 해당 폴더에 대한 권한 및 용량 제한 설정, 폴더 로그 및 현황 보기, 하위 폴더에 대한 폴더관리자 지정 등의 업무를 수행할 수 있습니다.  폴더관리자의 지정 및 해제를 위해서는 **폴더 관리 - 폴더 관리자 설정**을 선택합니다.
 
-폴더관리자를 설정하는 세부적인 방법은 [**폴더관리자 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined-1)를 참고하세요.&#x20;
+폴더관리자를 설정하는 세부적인 방법은 [**폴더관리자 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-1)를 참고하세요.&#x20;
 
 {% hint style="warning" icon="square-poll-horizontal" %}
 **폴더관리자**에 대한 자세한 사항은 [**사용자의 종류와 역할**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/concept/user)을 참고하세요.
@@ -46,27 +46,27 @@
 
 **폴더 관리 - 권한 설정** 메뉴에서 특정 부서/사용자에 대해 해당 폴더에서의 읽기, 쓰기, 목록보기, 삭제, 파일/폴더 생성 등의 권한을 허용 또는 거부할 수 있습니다.&#x20;
 
-폴더 권한을 설정하는 세부적인 방법은 [**폴더 권한 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined-1)를 참고하세요.&#x20;
+폴더 권한을 설정하는 세부적인 방법은 [**폴더 권한 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-1)를 참고하세요.&#x20;
 
 #### 폴더 용량 제한 설정하기
 
 **폴더 관리 - 용량 제한** 메뉴에서 해당 폴더의 용량을 특정 크기로 제한하도록 설정할 수 있습니다.
 
-폴더 용량 제한을 설정하는 방법은 [**폴더 용량 제한 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined-3)를 참고하세요.
+폴더 용량 제한을 설정하는 방법은 [**폴더 용량 제한 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-3)를 참고하세요.
 
 #### 폴더 로그 보기
 
 **폴더 관리 - 폴더 로그 보기** 메뉴에서 해당 폴더에서의 업로드, 다운로드, 이동, 삭제, 이름 변경, 폴더/파일 생성 등의 작업 이력을 검색할 수 있습니다.
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-폴더 로그의 검색 방법 및 표시 내용은 [**폴더 로그 보기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined-6)를 참고하세요.&#x20;
+폴더 로그의 검색 방법 및 표시 내용은 [**폴더 로그 보기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-6)를 참고하세요.&#x20;
 {% endhint %}
 
 #### 폴더 용량 제한 현황 보기
 
 **폴더 관리 -** **폴더 용량 제한 현황** 메뉴에서 부서문서함 내 폴더의 용량 제한 현황을 확인할 수 있습니다.
 
-폴더 용량 제한 현황을 확인하는 세부적인 방법은 [**폴더 용량 제한 현황 확인하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-2/undefined-4)를 참고하세요.&#x20;
+폴더 용량 제한 현황을 확인하는 세부적인 방법은 [**폴더 용량 제한 현황 확인하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-4)를 참고하세요.&#x20;
 
 {% hint style="warning" icon="square-poll-horizontal" %}
 웹페이지의 **일반 모듈 관리 -** **Basic - 문서함 관리 - 폴더 용량 관리 - 폴더 용량 현황**에서도 동일한 작업이 가능합니다.  자세한 사항은 [**관리자가 웹에서 폴더 용량 제한 현황 확인하는 방법**](undefined-13/undefined-1.md)을 참고하세요.

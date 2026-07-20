@@ -5,7 +5,7 @@
 사용자가 문서링크 복사 기능을 사용하려면, 사전에 문서링크 정책이 적용되어 있어야 합니다. 따라서, 관리자는 문서링크 기본 정책을 확인하고, OTP를 수신할 이메일 도메인을 등록하는 등 정책을 고객사 환경에 맞게 조정한 후, 전사에 적용해야 합니다.
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-문서링크 복사의 용도 및 사용 절차에 대한 자세한 설명은 [**문서 공유 및 협업을 위한 기능 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined)를 참고합니다.&#x20;
+문서링크 복사의 용도 및 사용 절차에 대한 자세한 설명은 [**문서 공유 및 협업을 위한 기능 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-1)를 참고합니다.&#x20;
 {% endhint %}
 
 ### <mark style="color:$primary;">기본 정책 확인 및 변경하기</mark>

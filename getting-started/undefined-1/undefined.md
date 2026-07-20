@@ -13,7 +13,7 @@
 <figure><img src="../../.gitbook/assets/img_000 (164).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-관리자가 사용을 설정한 경우, 윈도우 PC에서 문서중앙화 에이전트 실행 시 중앙문서함 드라이브 외에도 상황에 따라 온라인/오프라인/반출 보안디스크를 사용할 수 있습니다. 자세한 내용은 [**보안디스크 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/disklock/undefined-2/undefined)를 참고합니다.
+관리자가 사용을 설정한 경우, 윈도우 PC에서 문서중앙화 에이전트 실행 시 중앙문서함 드라이브 외에도 상황에 따라 온라인/오프라인/반출 보안디스크를 사용할 수 있습니다. 자세한 내용은 [**보안디스크 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/disklock/undefined-3)를 참고합니다.
 {% endhint %}
 
 ### <mark style="color:$primary;">PC 보안 기능 소개</mark>
