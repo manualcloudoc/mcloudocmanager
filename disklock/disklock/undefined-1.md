@@ -4,7 +4,7 @@
 
 **DiskLock**의 **로컬저장금지 정책**은 애플리케이션 카테고리별로 애플리케이션에 허용하고 제한할 권한을 지정합니다. 그리고, **DiskLock Plus**의 **화면 캡쳐 제어 정책**, **클립보드 복사 제어 정책, 인쇄 제어 정책**도 애플리케이션 카테고리별로 허용 여부를 설정합니다. 따라서, 이러한 보안 기능들을 사용하기 위해서는 먼저 애플리케이션들을 적절한 카테고리로 분류하는 과정이 필요합니다.
 
-### <mark style="color:$primary;">기본 애플리케이션 카테고리</mark>
+#### <mark style="color:$primary;">기본 애플리케이션 카테고리</mark>
 
 문서 중앙화 솔루션에는 기본적으로 4개의 애플리케이션 카테고리가 생성됩니다. 다음 표는 각 기본 애플리케이션 카테고리로 분류되는 애플리케이션의 종류와 구 버전의 문서 중앙화 솔루션에서 사용하는 카테고리의 이름을 정리한 것입니다.
 
@@ -12,7 +12,7 @@
 
 문서 중앙화 솔루션은 기본적으로 사용자 PC에서 자주 사용되는 애플리케이션들을 이러한 기본 애플리케이션 카테고리로 분류되도록 설정되어 있습니다. **애플리케이션** **자동분류** 기능을 사용하면 특정 카테고리로 분류한 애플리케이션과 유사한 새 애플리케이션이 실행될 경우 자동으로 해당 카테고리로 분류되도록 할 수 있습니다. 자동분류 대상이 아닌 새 애플리케이션은 **미분류** 카테고리로 분류되고 사용자가 직접 적절한 카테고리로 이동시켜야 합니다.
 
-### <mark style="color:$primary;">애플리케이션 카테고리 구조</mark>
+#### <mark style="color:$primary;">애플리케이션 카테고리 구조</mark>
 
 애플리케이션 카테고리는 **<모든 애플리케이션>**&#xC744; 최상위로, 나머지 기본 애플리케이션 카테고리들이 하위 카테고리로 되어 있는 다음과 같은 계층 구조로 이루어집니다.
 
@@ -22,39 +22,20 @@
 
 <div align="left"><figure><img src="../../.gitbook/assets/img_001 (123).png" alt=""><figcaption></figcaption></figure></div>
 
-
-
 다음은 각 기본 애플리케이션 카테고리에 추가되는 하위 카테고리와 해당 카테고리로 분류되는 대표적인 애플리케이션들의 예입니다.\
 ​
 
 * **Business Application**
 
-| 카테고리 경로                                                             | 애플리케이션 이름     |
-| ------------------------------------------------------------------- | ------------- |
-| Business Applications> Productivity> Word Processing> MS Word       | WINWORD.EXE   |
-| Business Applications> Productivity> Spreadsheets> MS Excel         | EXCEL.EXE     |
-| Business Applications> Productivity> Presentation> MS Powerpoint    | POWERPRNT.EXE |
-| Business Applications> Productivity> Word Processing> Other Editors | notepad.exe   |
-| Business Applications> Productivity> Graphics> AutoCAD> AutoCAD버전   | acad.exe      |
-| Business Applications> Productivity> Graphics> Adobe> PhotoShop     | Photoshop.exe |
+<table><thead><tr><th width="424">카테고리 경로</th><th>애플리케이션 이름</th></tr></thead><tbody><tr><td>Business Applications> Productivity> Word Processing> MS Word</td><td>WINWORD.EXE</td></tr><tr><td>Business Applications> Productivity> Spreadsheets> MS Excel</td><td>EXCEL.EXE</td></tr><tr><td>Business Applications> Productivity> Presentation> MS Powerpoint</td><td>POWERPRNT.EXE</td></tr><tr><td>Business Applications> Productivity> Word Processing> Other Editors</td><td>notepad.exe</td></tr><tr><td>Business Applications> Productivity> Graphics> AutoCAD> AutoCAD버전</td><td>acad.exe</td></tr><tr><td>Business Applications> Productivity> Graphics> Adobe> PhotoShop</td><td>Photoshop.exe</td></tr></tbody></table>
 
 * **Export Applications**
 
-| 카테고리 경로                                           | 애플리케이션 이름     |
-| ------------------------------------------------- | ------------- |
-| Export Applications> Web Browsers> Chrome         | chrome.exe    |
-| Export Applications> Web Browsers> MSEdge         | msedge.exe    |
-| Export Applications> FTP> Filezilla               | filezilla.exe |
-| Export Applications> Instant Messaging> KakaoTalk | KakaoTalk.exe |
-| Export Applications> Email> MS Outlook            | OUTLOOK.EXE   |
+<table><thead><tr><th width="425">카테고리 경로</th><th>애플리케이션 이름</th></tr></thead><tbody><tr><td>Export Applications> Web Browsers> Chrome</td><td>chrome.exe</td></tr><tr><td>Export Applications> Web Browsers> MSEdge</td><td>msedge.exe</td></tr><tr><td>Export Applications> FTP> Filezilla</td><td>filezilla.exe</td></tr><tr><td>Export Applications> Instant Messaging> KakaoTalk</td><td>KakaoTalk.exe</td></tr><tr><td>Export Applications> Email> MS Outlook</td><td>OUTLOOK.EXE</td></tr></tbody></table>
 
 * **FullAccess Application**
 
-| 카테고리 경로                                                                    | 애플리케이션 이름    |
-| -------------------------------------------------------------------------- | ------------ |
-| FullAccess Applications> System> Operating Systems>Windows Explorer        | explorer.exe |
-| FullAccess Applications> Productivity> Software Development> Visual Studio | XDesProc.exe |
-| FullAccess Applications> System> Miscellaneous Utilities> Compress>WinZip  | WINZIP32.EXE |
+<table><thead><tr><th width="424">카테고리 경로</th><th>애플리케이션 이름</th></tr></thead><tbody><tr><td>FullAccess Applications> System> Operating Systems>Windows Explorer</td><td>explorer.exe</td></tr><tr><td>FullAccess Applications> Productivity> Software Development> Visual Studio</td><td>XDesProc.exe</td></tr><tr><td>FullAccess Applications> System> Miscellaneous Utilities> Compress>WinZip</td><td>WINZIP32.EXE</td></tr></tbody></table>
 
 {% hint style="warning" icon="square-poll-horizontal" %}
 애플리케이션 카테고리는DiskLock 콘솔에서 설정할 수 있습니다. DiskLock 콘솔에서 애플리케이션 카테고리를 설정하는 방법은 [**DiskLock 콘솔에서 애플리케이션 카테고리 관리하기**](disklock/mgmtcategory.md)를 참고합니다.

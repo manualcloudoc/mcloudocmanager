@@ -31,9 +31,8 @@
 
 * **애플리케이션 경로**: 특정 경로에 위치하는 애플리케이션으로 자동분류 대상을 제한할 수 있습니다. 이때 해당 경로를 직접 입력하거나, 예약 폴더를 선택한 후 하위 경로를 추가할 수 있습니다.  예약 폴더의 예는 다음과 같습니다.
 
-> <img src="../../.gitbook/assets/image (99).png" alt="" data-size="original">  Windows 폴더: C:\Windows, C:\WinNT
->
-> <img src="../../.gitbook/assets/image (100).png" alt="" data-size="original">  시스템 폴더: C:\Windows\System32, C:\WinNT\System32
+> - Windows 폴더: C:\Windows, C:\WinNT
+> - 시스템 폴더: C:\Windows\System32, C:\WinNT\System32
 
 {% hint style="success" icon="lightbulb-exclamation-on" %}
 예약 폴더를 사용한 **애플리케이션 경로** 입력 방법은 다음과 같습니다.\

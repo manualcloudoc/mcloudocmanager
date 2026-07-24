@@ -215,18 +215,18 @@
 
 ### **보안등급 및 보안등급문서 관리하기**
 
-* [**문서보안등급 관리하기**](../document-security-classification/undefined/undefined.md)
-* [**문서보안등급 구조 관리하기**](../document-security-classification/undefined/undefined-1.md)
-* [**문서보안등급별 사용자 권한 관리하기**](../document-security-classification/undefined/undefined-2.md)
-* [**문서보안등급 변경 정책 관리하기**](../document-security-classification/undefined/undefined-3.md)
-* [**보안등급문서용 로컬저장금지 정책 설정하기**](../document-security-classification/undefined/undefined-4.md)
-* [**문서보안등급 설정 이력 보기**](../document-security-classification/undefined/undefined-5.md)
-* [**문서보안등급 변경 신청 처리 이력 보기**](../document-security-classification/undefined/undefined-6.md)
-* [**문서보안등급 구조 및 취급 권한을 최신 정보로 즉시 업데이트하기**](../document-security-classification/undefined/undefined-7.md)
-* [**문서보안등급 변경 정책 관리하기**](../document-security-classification/undefined/undefined-3.md)
-* [**보안등급문서 작업 권한의 특징**](../document-security-classification/undefined/undefined-8.md)
-* [**보안등급에 다른 문서들의 동시 열람 시 유의 사항**](../document-security-classification/undefined/undefined-9.md)
-* [**보안등급문서 열람 시 클립보드 복사 금지 권한과 클립보드 복사 금지 정책의 적용 사례**](../document-security-classification/undefined/undefined-10.md)
+* [**문서보안등급 관리하기**](../document-security-classification/undefined/)
+* [**문서보안등급 구조 관리하기**](../document-security-classification/undefined/undefined.md)
+* [**문서보안등급별 사용자 권한 관리하기**](../document-security-classification/undefined/undefined-1.md)
+* [**문서보안등급 변경 정책 관리하기**](../document-security-classification/undefined/undefined-2.md)
+* [**보안등급문서용 로컬저장금지 정책 설정하기**](../document-security-classification/undefined/undefined-3.md)
+* [**문서보안등급 설정 이력 보기**](../document-security-classification/undefined/undefined-4.md)
+* [**문서보안등급 변경 신청 처리 이력 보기**](../document-security-classification/undefined/undefined-5.md)
+* [**문서보안등급 구조 및 취급 권한을 최신 정보로 즉시 업데이트하기**](../document-security-classification/undefined/undefined-6.md)
+* [**문서보안등급 변경 정책 관리하기**](../document-security-classification/undefined/undefined-2.md)
+* [**보안등급문서 작업 권한의 특징**](../document-security-classification/undefined/undefined-7.md)
+* [**보안등급에 다른 문서들의 동시 열람 시 유의 사항**](../document-security-classification/undefined/undefined-8.md)
+* [**보안등급문서 열람 시 클립보드 복사 금지 권한과 클립보드 복사 금지 정책의 적용 사례**](../document-security-classification/undefined/undefined-9.md)
 
 ### **문서 보존 기한 관리하기**
 
@@ -280,9 +280,9 @@
 > #### 정책 라이브러리
 >
 > * [**정책 라이브러리 소개**](../disklock/disklock/undefined-7/)
-> * [**정책 라이브러리를 이용하여 로컬저장금지 정책 설정하기**](../disklock/disklock/undefined-7/undefined-1.md)
-> * [**수동으로 로컬저장금지 정책을 표준 정책 라이브러리에 취합하기**](../disklock/disklock/undefined-7/undefined-2.md)
-> * [**수동으로 표준 정책 라이브러리를 고객사 라이브러리에 반영하기**](../disklock/disklock/undefined-7/undefined.md)
+> * [**정책 라이브러리를 이용하여 로컬저장금지 정책 설정하기**](../disklock/disklock/undefined-7/undefined.md)
+> * [**수동으로 로컬저장금지 정책을 표준 정책 라이브러리에 취합하기**](../disklock/disklock/undefined-7/undefined-1.md)
+> * [**수동으로 표준 정책 라이브러리를 고객사 라이브러리에 반영하기**](../disklock/disklock/undefined-7/undefined-2.md)
 
 * [**관리자가 문서반출 통제하는 방법**](../disklock/disklock/undefined-8.md)
 * [**웹 반출 예외 정책 관리하기**](../disklock/disklock/undefined-9.md)

@@ -30,9 +30,9 @@ description: Category for DiskLock module
 > #### 정책 라이브러리
 >
 > * [**정책 라이브러리 소개**](disklock/undefined-7/)
-> * [**정책 라이브러리를 이용하여 로컬저장금지 정책 설정하기**](disklock/undefined-7/undefined-1.md)
-> * [**수동으로 로컬저장금지 정책을 표준 정책 라이브러리에 취합하기**](disklock/undefined-7/undefined-2.md)
-> * [**수동으로 표준 정책 라이브러리를 고객사 라이브러리에 반영하기**](disklock/undefined-7/undefined.md)
+> * [**정책 라이브러리를 이용하여 로컬저장금지 정책 설정하기**](disklock/undefined-7/undefined.md)
+> * [**수동으로 로컬저장금지 정책을 표준 정책 라이브러리에 취합하기**](disklock/undefined-7/undefined-1.md)
+> * [**수동으로 표준 정책 라이브러리를 고객사 라이브러리에 반영하기**](disklock/undefined-7/undefined-2.md)
 
 * [**관리자가 문서반출 통제하는 방법**](disklock/undefined-8.md)
 * [**웹 반출 예외 정책 관리하기**](disklock/undefined-9.md)
