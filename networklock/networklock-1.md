@@ -6,7 +6,7 @@
 
 1. PC**보안 모듈 관리 - NetworkLock - 정책 관리**를 클릭합니다.
 
-![](<../.gitbook/assets/img_000 (166).png>)
+<figure><img src="../.gitbook/assets/img_000 (166).png" alt=""><figcaption></figcaption></figure>
 
 2. **정책 목록**에서 추가 버튼 ![](<../.gitbook/assets/img_001 (153).png>)을 클릭하여 정책을 생성합니다. 기존 정책을 변경할 경우에는 정책 목록에서 변경할 정책을 선택합니다.
 

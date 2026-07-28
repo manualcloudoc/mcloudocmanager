@@ -1,12 +1,4 @@
----
-description: Category for Settings
----
-
 # Settings
-
-Category for Settings
-
-##
 
 ### **일반 설정**
 

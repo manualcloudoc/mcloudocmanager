@@ -19,7 +19,7 @@ PC 로그 정책은 아래 그림의 예와 같이 적용 순서가 부여된 �
 
 <figure><img src="../.gitbook/assets/img_001 (158).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;정책 아이템은 적용 순서에 따라 우선적으로 적용되며, 적용 가능한 정책 아이템이 없을 경우 로그가 기록되지 않습니다. 위의 예시 정책이 적용되는 과정은 다음과 같습니다.
+정책 아이템은 적용 순서에 따라 우선적으로 적용되며, 적용 가능한 정책 아이템이 없을 경우 로그가 기록되지 않습니다. 위의 예시 정책이 적용되는 과정은 다음과 같습니다.
 
 1. 고정디스크의 폴더에 있는 파일에 대한 입출력 작업일 경우 로그로 기록되지 않습니다.
 2. 위의 조건이 적용되지 않는 경우에 한하여, 고정디스크와 이동식 디스크에 위치하는 xls, xlsx, ppt, pptx, doc, docx, hwp, pdf, txt 파일의 생성, 읽기, 쓰기, 삭제, 이름 변경 작업에 대해 로그가 기록됩니다.
@@ -45,8 +45,9 @@ PC 로그 정책은 아래 그림의 예와 같이 적용 순서가 부여된 �
 
 <figure><img src="../.gitbook/assets/img_005 (80).png" alt=""><figcaption></figcaption></figure>
 
-2. ‘정책 아이템 추가’ 창에서 필요한 항목을 설정한 후 **확인**을 클릭합니다.\
-   ![](<../.gitbook/assets/img_006 (67).png>)
+2. ‘정책 아이템 추가’ 창에서 필요한 항목을 설정한 후 **확인**을 클릭합니다.
+
+<div align="left"><figure><img src="../.gitbook/assets/img_006 (67).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 
 

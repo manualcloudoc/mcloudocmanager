@@ -38,7 +38,7 @@ File Based (파일 확장자 기반) 정책 설정은 다음과 같습니다.  <
 
 <figure><img src="../.gitbook/assets/img_003 (120).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="111">적용 순서</th><th width="124">로그 기록</th><th width="273">파일</th><th>작업 종류</th><th>디스크 종류</th></tr></thead><tbody><tr><td>1</td><td>기록</td><td>*xls, *.xlsx, *.ppt, *.pptx, *.doc, *.docx, *.hwp, *.dwg, *.png, *.jpg, *.gif, *.pdf, *.txt</td><td>모든 작업</td><td>모든 디스크</td></tr><tr><td>2</td><td>기록 안 함</td><td>모든 파일</td><td>모든 작업</td><td>고정디스크</td></tr></tbody></table>
+<table><thead><tr><th width="77">적용순서</th><th width="93">로그 기록</th><th width="258">파일</th><th width="107">작업 종류</th><th>디스크 종류</th></tr></thead><tbody><tr><td>1</td><td>기록</td><td>*xls, *.xlsx, *.ppt, *.pptx, *.doc, *.docx, *.hwp, *.dwg, *.png, *.jpg, *.gif, *.pdf, *.txt</td><td>모든 작업</td><td>모든 디스크</td></tr><tr><td>2</td><td>기록 안 함</td><td>모든 파일</td><td>모든 작업</td><td>고정디스크</td></tr></tbody></table>
 
 1. 모든 디스크의 xls, xlsx, ppt, pptx, doc, docx, hwp, dwg, png, jpg, gif, pdf, txt 파일에 대한 입출력 작업 시 로그를 기록합니다.
 2. 위의 파일 종류에 해당하지 않을 경우에는 두번째 정책 아이템이 적용되어 고정디스크에서의 입출력 작업 시 로그를 기록하지 않습니다.
@@ -50,7 +50,7 @@ File Based (파일 확장자 기반) 정책 설정은 다음과 같습니다.  <
 
 ![](<../.gitbook/assets/img_004 (94).png>)
 
-<table><thead><tr><th width="86">적용 순서</th><th width="103">로그 기록</th><th width="142">애플리케이션 카테고리</th><th width="142">파일 경로</th><th>작업 종류</th><th>디스크 종류</th></tr></thead><tbody><tr><td>1</td><td>기록 안함</td><td>모든 애플리케이션</td><td>\Program Files \Program Files (x86) \Windows</td><td>읽기</td><td>고정디스크</td></tr><tr><td>2</td><td>기록</td><td>Export Applications</td><td>모든 폴더</td><td>읽기</td><td>고정디스크</td></tr><tr><td>3</td><td>기록 안함</td><td>모든 애플리케이션</td><td>모든 폴더</td><td>파일 생성, 읽기</td><td>고정디스크</td></tr><tr><td>4</td><td>기록</td><td>모든 애플리케이션</td><td>모든 폴더</td><td>모든 작업</td><td>모든 디스크</td></tr></tbody></table>
+<table><thead><tr><th width="76">적용 순서</th><th width="103">로그 기록</th><th width="119">애플리케이션 카테고리</th><th width="142">파일 경로</th><th width="110">작업 종류</th><th>디스크 종류</th></tr></thead><tbody><tr><td>1</td><td>기록 안함</td><td>모든 애플리케이션</td><td>\Program Files \Program Files (x86) \Windows</td><td>읽기</td><td>고정디스크</td></tr><tr><td>2</td><td>기록</td><td>Export Applications</td><td>모든 폴더</td><td>읽기</td><td>고정디스크</td></tr><tr><td>3</td><td>기록 안함</td><td>모든 애플리케이션</td><td>모든 폴더</td><td>파일 생성, 읽기</td><td>고정디스크</td></tr><tr><td>4</td><td>기록</td><td>모든 애플리케이션</td><td>모든 폴더</td><td>모든 작업</td><td>모든 디스크</td></tr></tbody></table>
 
 1. 고정디스크의 시스템 경로(\Windows, \Program Files, \ProgramFiles (x86)) 내 파일에 대한 읽기 작업은 프로그램 동작을 위해 필수적인 빈번한 작업이므로 로그를 기록하지 않습니다.&#x20;
 2. Export Applications 카테고리의 애플리케이션들은 문서의 외부 유출에 사용될 수 있으므로 고정디스크에 위치한 파일의 읽기 작업의 경우에도 로그를 기록합니다. 단, 시스템 경로 내 파일의 경우 로그에서 제외됩니다. (1번 정책 아이템이 우선 적용)
