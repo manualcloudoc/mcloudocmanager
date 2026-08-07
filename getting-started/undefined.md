@@ -373,14 +373,14 @@
 
 ## **Secure Document Viewer (보안 뷰어 모듈)**
 
-* [**보안 뷰어 사용을 위한 문서변환 시스템 소개**](../undefined.md)
+* [**보안 뷰어 사용을 위한 문서변환 시스템 소개**](../undefined-1.md)
 
 ## **빅데이터 통계 (Big Data 모듈)**
 
-* [**빅데이터 통계 소개**](../undefined-1/)
-* [**문서 현황 통계 보기**](../undefined-1/undefined-2.md)
-* [**문서 반출 통계 보기**](../undefined-1/undefined-1.md)
-* [**파일 작업 통계 보기**](../undefined-1/undefined.md)
+* [**빅데이터 통계 소개**](../undefined-2/)
+* [**문서 현황 통계 보기**](../undefined-2/undefined-2.md)
+* [**문서 반출 통계 보기**](../undefined-2/undefined-1.md)
+* [**파일 작업 통계 보기**](../undefined-2/undefined.md)
 
 ## **Settings (설정홈 매뉴얼)**
 
