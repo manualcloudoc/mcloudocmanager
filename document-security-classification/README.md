@@ -1,7 +1,3 @@
----
-description: Document Security Classification
----
-
 # 문서보안등급
 
 ### **보안등급 및 보안등급문서 관리하기**

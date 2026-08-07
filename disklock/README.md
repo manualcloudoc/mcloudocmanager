@@ -1,7 +1,3 @@
----
-description: Category for DiskLock module
----
-
 # DiskLock
 
 ### **DiskLock 관리하기**
@@ -46,4 +42,4 @@ description: Category for DiskLock module
 
 ### **사용자PC 정책 적용 이력 보기**
 
-* [**사용자PC 정책 현황 및 갱신 이력 보기**](pc.md)
+* [**사용자PC 정책 적용 이력 보기**](pc.md)
