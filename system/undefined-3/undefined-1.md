@@ -1,208 +1,233 @@
-# 덤프 취득 및 분석 방법
+# 서버 관제 결과 로그 항목 및 비정상 판단 기준
 
-​\
-응용 프로그램이 비정상적으로 동작하거나 시스템 오류(예: 블루스크린)가 발생한 경우 이에 대한 원인 분석을 위한 덤프 취득 및 분석 방법을 설명합니다.
+서버 관제 항목들을 체크한 결과를 취합한 로그에 대한 설명입니다. 비정상인 항목이 있을 경우에는 로그 내용을 메일로 발송하여 서버 이상을 담당자에게 알립니다.
 
-## **커널 영역과 사용자 영역**
+* **로그의 위치 : /plusdrive/log/monitoring\_log/default\_log**
 
-윈도우 운영체제는 운영체제 보호 목적으로 메모리를 커널 영역과 사용자 영역으로 구분하여 관리합니다.
+> - **정상일 경우에 로그 파일명** **: Server\_monitoring\_년월일\_시분초.html**
+> - **비정상인 경우 로그 파일명 : Alert\_server\_monitoring\_년월일\_시분초.html**
 
-<div align="left"><img src="../../.gitbook/assets/img_000 (226).png" alt="" width="397"></div>
+* **로그 양식**
 
-<table><thead><tr><th width="171">구분</th><th>설명</th></tr></thead><tbody><tr><td>사용자 영역</td><td><p>일반 응용 프로그램이 실행되는 영역. </p><p>  예) PlusDrive.exe, Excel.exe, Powerppt.exe 등 동작 </p><p>일반 응용 프로그램(사용자 모듈)은 <strong>사용자 모드</strong>에서 동작. </p><p>커널 영역 메모리에 접근할 수 없음. </p><p>따라서, 커널 작업이 필요할 때 시스템 콜 사용해야 함.</p></td></tr><tr><td>커널 영역</td><td><p>파일 시스템, 하드웨어 제어 디바이스 드라이버 등과 같이 운영체제가 실행되는 영역예) PlusFsd.sys, Plusfsfd.sys, usbstor.sys 등 동작 </p><p>커널 모듈은 커널 영역에 위치하며 <strong>커널 모드</strong>로 동작. </p><p>커널 모듈은 커널 영역과 사용자 영역 메모리 모두 접근 가능.</p></td></tr></tbody></table>
+<figure><img src="../../.gitbook/assets/img_000 (228).png" alt=""><figcaption></figcaption></figure>
 
-사용자 영역에서 동작하는 응용 프로그램들은 운영체제에 의해 엄격히 구분되어 보호됩니다. 따라서, 특정 응용 프로그램에 문제 발생 시 다른 응용 프로그램에 영향을 거의 주지 않습니다.
+* **메일 수신자 설정**
 
-그러나, 커널 영역에서 동작하는 실행 모듈들은 상호 참조가 가능하여 특정 모듈에서 문제 발생 시 전체 시스템 크래시(블루스크린)로 이어집니다.
+> - **설정 파일 : /plusdrive/conf/monitoring.conf**
+> - **설정 항목 : recieve\_server\_check\_mail\_list**
+>
+> &#x20;     ex) recieve\_server\_check\_mail\_list support\_cloudoc@net-id.co.kr
+>
+> &#x20;           (여러 개의 수신 메일을 설정 시에는 tab으로 구분하여 등록)
 
-### <mark style="color:$primary;">**덤프 종류**</mark>
+### <mark style="color:$primary;">관제 항목 및 비정상 판단 기준</mark>
 
-덤프는 크게 **사용자모드 덤프**와 **커널모드 덤프**로 나눌 수 있습니다.
+관제 항목별 기준 값은 설정파일로 저장되어 있습니다. 기준 값을 초과할 경우 비정상으로 판단하여 로그에 붉은색으로 표시합니다. 이 기준 값은 서버 운영 상황에 맞게 변경이 가능합니다.
 
-사용자모드 덤프는 응용 프로그램 실행 정보를 기록하고 있으며, 응용 프로그램이 예기치 않게 종료되거나 멈출(hang) 때 취득합니다. 반면, 커널모드 덤프는 윈도우 시스템(OS) 실행 정보를 기록하고 있으며, 일반적으로 블루스크린이 발생하거나 시스템이 멈출 때 취득합니다.
+* **설정 파일: /plusdrive/conf/monitoring.conf**
+* **관제 항목 및 기준 값**
 
-아래는 모드별 덤프 종류에 대한 설명입니다.
+<table data-search="false"><thead><tr><th width="109">확인 항목</th><th width="121">확인 내용</th><th width="263">설정 및 기본 기준 값</th><th valign="top">Text비정상 판단 기준</th></tr></thead><tbody><tr><td><strong>Apache</strong></td><td>서비스 정상 여부</td><td><ul><li>설정된 Apache 포트와 통신 확인</li><li>pdrive.conf의 file_http_port에 설정된 Apache 포트로 통신 (기본 80)</li></ul></td><td valign="top">Apache 포트(기본80)로 응답 유무 체크하여 무응답 및 오류가 발생할 경우</td></tr><tr><td></td><td>Thread, CPU, RAM 사용량</td><td><ul><li>Apache 서비스 체크 Thread 기준값check_value_apache_thread 500</li><li>Apache 서비스 체크 CPU 기준값check_value_apache_cpu 100</li><li>Apache 서비스 체크 Memory 기준값check_value_apache_memory 20480</li></ul></td><td valign="top">Thread, CPU, RAM 사용량이 서버 설정 값을 초과할 경우</td></tr><tr><td><strong>Tomcat</strong></td><td>서비스 정상 여부</td><td><ul><li>설정된 Tomcat 포트와 통신 확인</li><li>monitoring.conf의 tomcat_port에 설정된 Tomcat 포트로 통신 (기본 8085)</li></ul></td><td valign="top">Tomcat 포트(기본8085)로 응답 유무 체크하여 무응답 및 오류가 발생할 경우</td></tr><tr><td></td><td>Thread, CPU, RAM 사용량</td><td><ul><li>Tomcat 서비스 체크 Thread 기준값check_value_tomcat_thread 500</li><li>Tomcat 서비스 체크 CPU 기준값check_value_tomcat_cpu 70 </li><li>Tomcat 서비스 체크 Memory 기준값check_value_tomcat_memory 10240</li></ul></td><td valign="top">Thread, CPU, RAM 사용량이 서버 설정 값을 초과할 경우</td></tr><tr><td><strong>Mod_jk</strong></td><td>netstat 상태 확인</td><td><ul><li>mod_jk 체크 Timewait 기준값</li></ul><p>     check_value_modjk_timewait 300</p><ul><li>mod_jk 체크 Closewait 기준값check_value_modjk_closewait 200</li><li>mod_jk 체크 Established 기준값check_value_modjk_established 600</li></ul></td><td valign="top">netstat 에서 8009 포트의 TIME_WAIT, CLOSE_WAIT, ESTABLISHED 항목의 수가 서버 설정 값을 초과할 경우</td></tr><tr><td><strong>Database</strong></td><td>클라우독 DB 확인</td><td><p>pdrive.conf, pdrive_log.conf의 아래 내용에 기입된 정보로 DB연결 확인</p><p></p><p># DB 서버 IP</p><p> database_server </p><p></p><p># DB 접속계정</p><p> database_user </p><p></p><p># DB password </p><p> database_password </p><p></p><p># DB name</p><p> database_dbname </p><p></p><p># DB 종류</p><p> database_type </p><p></p><p># DB Port </p><p> database_port</p></td><td valign="top">클라우독 DB에 연결을 시도하여 연결이 되지 않을 경우</td></tr><tr><td></td><td>인사연동 DB 확인</td><td><p>조직도 연동 진행 시 사용</p><p>group.conf에 기입된 정보로 DB 연결 확인</p><p></p><p> # DB 서버 IP </p><p>orgchart_server</p><p></p><p># DB Port </p><p>orgchart_server_port</p><p></p><p># DB 접속계정 orgchart_server_user</p><p></p><p># DB password orgchart_server_password</p><p></p><p># DB name orgchart_server_dbname</p><p></p><p># DB 종류 orgchart_server_dbtype</p><p></p><p>로그인 연동 진행 시 사용 custom_login.conf에 기입된 정보로 DB 연결 확인 </p><p></p><p># DB 서버 IP </p><p>login_server</p><p></p><p># DB Port </p><p>login_port </p><p></p><p># DB 접속계정 </p><p>login_db_user </p><p></p><p># DB password </p><p>login_db_pass </p><p></p><p># DB name </p><p>login_db_name </p><p></p><p># DB 종류 </p><p>login_db_type</p></td><td valign="top">인사연동 DB에 연결을 시도하여 연결이 되지 않을 경우</td></tr><tr><td><strong>OS</strong></td><td>CPU, Memory, Disk 사용량</td><td><ul><li>디스크 사용률(%) 기준값</li></ul><p>      check_value_hdd 95</p><p></p><ul><li>전체 CPU 사용률(%) 기준값</li></ul><p>       check_value_cpu 100</p><p></p><ul><li>전체 Memory 사용률(%) 기준값</li></ul><p>      check_value_ram 99</p><p></p><ul><li>전체 Swap 사용률(%) 기준값</li></ul><p>      check_value_swap 90</p></td><td valign="top">CPU, Memory, Disk 사용량이 서버 설정 값을 초과할 경우</td></tr><tr><td></td><td>netstat 상태 확인</td><td><ul><li>통신 상태 체크 Closewait 기준값</li></ul><p>      check_value_closewait 1000</p><p></p><ul><li>통신 상태 체크 Timewait 기준값</li></ul><p>       check_value_timewait 5000</p></td><td valign="top">netstat 에서 전체 TIME_WAIT, CLOSE_WAIT 항목의 수가 서버 설정 값을 초과할 경우</td></tr></tbody></table>
 
-<table><thead><tr><th width="98">분류</th><th width="204">덤프 종류</th><th>설명</th></tr></thead><tbody><tr><td>사용자모드</td><td>전체 덤프</td><td>해당 프로세스 전체 메모리, 실행 파일 이미지, 핸들 테이블 등 덤프 생성 시 메모리 상황을 파악하는 데 필요한 덤프. 제공되는 정보가 고정되어 있음.</td></tr><tr><td></td><td>미니 덤프</td><td>기본적으로 증상 해결에 필요한 최소한의 정보를 제공하나, 옵션에 따라 정보를 추가할 수 있음. 추가한 옵션에 따라 전체 덤프보다 더 많은 정보를 저장</td></tr><tr><td>커널모드</td><td>작은 메모리 덤프</td><td>필요한 크래시 덤프 정보만 기록한 덤프</td></tr><tr><td></td><td>커널 메모리 덤프 (권장)</td><td>커널 메모리 정보를 기록한 덤프</td></tr><tr><td></td><td>전체 메모리 덤프</td><td>실행 중인 프로세스 정보 포함하여 시스템 메모리의 모든 내용을 기록한 덤프</td></tr><tr><td></td><td>자동 메모리 덤프</td><td>커널 메모리 덤프와 동일하나, 커널 메모리 정보를 기록하기 위한 페이지 파일(pagefile.sys)의 크기를 자동으로 최적화한다.</td></tr><tr><td></td><td>활성화된 메모리 덤프</td><td>전체 메모리 덤프와 비슷하지만, 분석에 불필요한 정보를 필터링하여 기록하여 전체 메모리 덤프보다 덤프 파일 크기가 작음</td></tr></tbody></table>
+### <mark style="color:$primary;">Apache 비정상 예상 원인</mark>
 
-### <mark style="color:$primary;">**덤프 생성 방법**</mark>
+#### 서비스
 
-커널모드와 사용자모드 덤프 파일 생성을 위한 여러 방법이 있습니다.
+Apache 서비스가 응답을 하지 않거나 서비스가 종료되어 응답할 수 없는 경우일 수 있습니다.
 
-#### 1)   응용 프로그램 덤프 자동 생성
+| <p><strong>응답 없음의 예상되는 원인</strong></p><p></p><ol><li>요청 처리 지연으로 Apache Thread가 Full이되어 더 이상 응답을 받을 수 없을 경우</li><li>Apache의 서버엔진 모듈의 오류로 강제 종료되는 경우</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-응용 프로그램 실행 중 오류가 발생하면 덤프 파일을 자동 생성하도록 레지스트리에 미리 설정해야 합니다.
+원인 분석 시 참고: &#x20;
 
-1. 레지스트리 편집기(regedit.exe)를 실행합니다.
-2. 아래 키 위치에 덤프 생성 정보를 설정합니다.
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Apache 로그**](undefined-2.md#apache)
+* [**서버엔진 로그 예시 및 설명**](undefined-3.md)
 
-> 키:  HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps
+#### Thread 수
 
-| 이름             | 종류              | 설명                                    | 기본 값                      |
-| -------------- | --------------- | ------------------------------------- | ------------------------- |
-| **DumpFolder** | REG\_EXPAND\_SZ | 덤프 파일이 생성되는 경로                        | %LOCALAPPDATA%\CrashDumps |
-| **DumpCount**  | REG\_DWORD      | 덤프 파일 생성 최대 개수                        | 10                        |
-| **DumpType**   | REG\_DWORD      | 생성할 덤프 타입 0: 커스텀 덤프 1: 미니 덤프 2: 전체 덤프 | 1                         |
+Apache 요청 처리가 지연되는 경우 또는 요청이 많을 경우, 임계치보다 높아질 수 있습니다.
 
-3. 응용 프로그램 비정상 종료 시 덤프 파일이 자동 생성됩니다.
+| <p><strong>요청 처리 지연의 예상되는 원인</strong></p><p></p><ol><li>서버의 CPU, 메모리, 디스크 및 네트워크 대역폭에 영향을 받을 경우 지연됨</li><li>웹 응용 프로그램이 처리하는 작업, 데이터베이스 연결 및 처리, 파일 업로드 등이 지연될 경우</li><li>인터넷 연결의 문제, 대량의 요청, DDoS 공격 등이 지연을 유발함</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-#### 2)   실행 중인 응용 프로그램 덤프 수동 생성
+원인 분석 시 참고:&#x20;
 
-응용 프로그램 실행 중 멈춤 현상이 발생할 때 해당 프로그램 덤프 파일을 생성하는 일반적인 방법입니다.
+* [**Apache 상태 서버 관제 로그 항목 및 비정상 판단 기준**](apache.md)
 
-1. 작업 관리자(taskmgr.exe) 실행합니다.
-2. **세부 정보** 탭으로 이동 후 덤프 생성할 프로세스를 선택합니다.
-3. 마우스 우클릭하여 표시된 컨텍스트 메뉴에서 **덤프 파일 만들기** 항목을 선택합니다.
+#### CPU 사용률
 
-<div align="left"><img src="../../.gitbook/assets/img_001 (179).png" alt="" width="440"></div>
+Apache CPU 사용률이 임계치보다 증가하는 경우 Apache 서비스 확인이 필요합니다.
 
-#### 3)   Windbg를 통한 덤프 수동 생성
+| <p><strong>Apache CPU 증가의 원인</strong></p><p></p><ol><li>트래픽 증가로 인해 처리해야 하는 요청이 증가</li><li>무한루프로 인해 불필요한 작업이 계속 실행되는 경우</li><li>서버 메모리 부족하여 서버 성능 저하될 경우</li><li>서버 악성코드 감염</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-응용 프로그램 실행 초기 오류 발생하여 강제 종료되는 경우 작업관리자를 통한 덤프 취득이 안됩니다. 이 경우 Windbg 프로그램을 통해 덤프 취득이 가능합니다.
+원인 분석 시 참고: &#x20;
 
-1. Windbg를 실행 후 **File** 메뉴의 **Open Executable…** 메뉴를 선택합니다.
-2. 덤프를 취득할 실행 프로그램을 선택합니다. 실행 옵션이 필요한 경우 **Arguments**를 입력합니다.
+* [**Apache 상태 서버 관제 로그 항목 및 비정상 판단 기준**](apache.md)
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Apache 로그**](undefined-2.md#apache)
+* [**서버엔진 로그 예시 및 설명**](undefined-3.md)
 
-![](<../../.gitbook/assets/img_002 (149).png>)
+#### 메모리
 
-3. 응용 프로그램 실행과 동시에 Windbg가 제어권을 가지며 실행이 중단됩니다.
+Apache 메모리 사용률이 임계치보다 증가하는 경우 Apache 서비스 확인이 필요합니다.
 
-![](<../../.gitbook/assets/img_003 (129).png>)
+| <p><strong>Apache 메모리 증가의 원인</strong> </p><p></p><ol><li>트래픽 증가로 인해 처리해야 하는 요청이 증가</li><li>무한루프로 인해 불필요한 작업이 계속 실행되는 경우</li><li>메모리 누수</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-4. Windbg의 **Debug** 메뉴의 **Go** 메뉴를 선택합니다. 중단된 응용 프로그램이 계속 실행됩니다.
-5. 실행 중 예외(Exception)가 발생하면 Windbg가 제어권을 가집니다. 알려진 예외이면 계속 진행하고, 그렇지 않으면 아래 명령어를 입력하여 덤프 파일 생성합니다.
+원인 분석 시 참고: &#x20;
 
-> .dump  /ma  <파일경로>     (dump 앞에 점(.)이 있음에 주의)
+* [**Apache 상태 서버 관제 로그 항목 및 비정상 판단 기준**](apache.md)
+* **기타 서비스 로그 종류 및 오류 내용**의목차 [**Apache 로그**](undefined-2.md#apache)
+* [**서버엔진 로그 예시 및 설명**](undefined-3.md)
 
-![](<../../.gitbook/assets/img_004 (101).png>)
+### <mark style="color:$primary;">Tomcat 비정상 예상 원인</mark>
 
-#### 4)   커널모드 덤프 설정 후 자동 생성
+#### 서비스
 
-먼저 덤프 관련 설정 후 블루스크린 발생 시 덤프 파일이 자동으로 생성됩니다.
+Tomcat 서비스 이상 또는 네트워크 장애로 인해 통신 안될 경우 응답할 수 없는 경우일 수 있습니다.
 
-* 커널 덤프 설정 방법
+| <p><strong>응답 없음의 예상되는 원인</strong> </p><p></p><ol><li>메모리 부족으로 인해 서비스 종료된 경우 </li><li>요청이 많아져서 Thread 부족한 경우 </li><li>방화벽 또는 네트워크 장애로 인해 통신이 안될 경우</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-> - **시작메뉴**, **설정**, **고급 시스템 설정**을 누릅니다.
-> - **시작 및 복구** 의 **설정** 버튼을 누릅니다.
+원인 분석 시 참고: &#x20;
 
-<div align="left"><figure><img src="../../.gitbook/assets/img_005 (86).png" alt="" width="375"><figcaption></figcaption></figure></div>
+* **기타 서비스 로그 종류 및 오류 내용**의목차 [**Tomcat 로그**](undefined-2.md#tomcat)
 
-> * **시스템 오류**에서 설정한 후 **확인**을 누릅니다. 덤프 파일 종류는 **커널 메모리 덤프**를 권장합니다.
+#### <mark style="color:$primary;">Thread 수</mark>
 
-<div align="left"><figure><img src="../../.gitbook/assets/img_006 (74).png" alt="" width="372"><figcaption></figcaption></figure></div>
+Tomcat 요청이 많거나 지연되는 경우, 임계치보다 높아질 수 있습니다.
 
-> 사용 중 시스템 크래시 발생 시 설정된 위치에 덤프 파일이 자동 생성됩니다. 단, 덤프 생성 완료되기 전에 컴퓨터를 강제 종료하면 덤프가 생성되지 않을 수 있습니다.  덤프 파일 크기가 큰 관계로 압축 후 당사에 보내주시면 됩니다.
+| <p><strong>Thread 증가의 원인</strong> </p><p></p><ol><li>요청 처리량의 증가하여 처리해야 할 요청이 증가됨</li><li>DB와 같은 외부 자원에서 응답 지연되어 Thread가 대기하고 있어 증가됨</li></ol> |
+| --------------------------------------------------------------------------------------------------------------------------------------------- |
 
-<div align="left"><figure><img src="../../.gitbook/assets/img_007 (62).png" alt="" width="375"><figcaption></figcaption></figure></div>
+원인 분석 시 참고:&#x20;
 
-#### 5)   강제 블루스크린 발생하여 커널모드 덤프 생성
+* [**Tomcat Thread 서버 관제 로그 항목 및 비정상 판단 기준**](tomcat-thread.md)
 
-커널 작업 수행 중 멈춤 현상이 발생한 경우 덤프 파일 생성이 안 될 수 있습니다. 이런 상황에서 강제 블루스크린을 발생하여 덤프 취득할 수 있습니다.
+#### CPU 사용률
 
-**프로그램 실행할 수 있는 상태인 경우**
+Tomcat의 CPU 사용률이 임계치보다 증가하는 경우 Tomcat 서비스 확인이 필요합니다.
 
-1. NotMyFault.exe 툴 실행합니다.
+| <p><strong>Tomcat CPU 증가의 원인</strong></p><p></p><ol><li>Tomcat이 처리하는 요청 증가</li><li>Thread 부족하여 요청 처리가 대기하면서 증가</li><li>메모리 부족으로 인하여 GC 발생으로 인한 증가</li></ol> |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-> 다운로드 경로 : [https://docs.microsoft.com/en-us/sysinternals/downloads/notmyfault](https://docs.microsoft.com/en-us/sysinternals/downloads/notmyfault)
+원인 분석 시 참고:  &#x20;
 
-2. **Crash** 버튼을 클릭하면 블루스크린이 발생합니다.
+* [**Tomcat Thread 서버 관제 로그 항목 및 비정상 판단 기준**](tomcat-thread.md)
+* **기타 서비스 로그 종류 및 오류 내용의** 목차 [**Tomcat 로그**](undefined-2.md#tomcat)
 
-<div align="left"><img src="../../.gitbook/assets/img_008 (56).png" alt="" width="466"></div>
+#### 메모리
 
-**프로그램 실행할 수 없는 상태인 경우**
+Tomcat의 메모리 사용률이 임계치보다 증가하는 경우 Tomcat 서비스 확인이 필요합니다.
 
-키보드를 통한 강제 블루스크린 방법을 사용합니다.
+| <p><strong>Tomcat 메모리 증가의 원인</strong></p><p></p><ol><li>Tomcat이 처리하는 요청 증가</li><li>메모리 누수</li></ol> |
+| --------------------------------------------------------------------------------------------------- |
 
-1. 레지스트리 편집기(regedit.exe)를 실행합니다.
-2. 키보드 연결 타입에 따라 아래 레지스트리 값을 설정합니다.
+원인 분석 시 참고: &#x20;
 
-<table data-search="false"><thead><tr><th width="134">키보드 종류</th><th width="94"></th><th width="113"></th><th>레지스트리 정보</th></tr></thead><tbody><tr><td><strong>PS/2 키보드</strong></td><td>키</td><td></td><td>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services \i8042prt\Parameters</td></tr><tr><td></td><td>값</td><td>이름</td><td>CrashOnCtrlScroll</td></tr><tr><td></td><td></td><td>종류</td><td>REG_DWORD</td></tr><tr><td></td><td></td><td>데이터</td><td>1</td></tr><tr><td><strong>USB 키보드</strong></td><td>키</td><td></td><td>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services \kbdhid\Parameters</td></tr><tr><td></td><td>값</td><td>이름</td><td>CrashOnCtrlScroll</td></tr><tr><td></td><td></td><td>종류</td><td>REG_DWORD</td></tr><tr><td></td><td></td><td>데이터</td><td>1</td></tr><tr><td><strong>Hyper-V 키보드</strong></td><td>키</td><td></td><td>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services \hyperkbd\Parameters</td></tr><tr><td></td><td>값</td><td>이름</td><td>CrashOnCtrlScroll</td></tr><tr><td></td><td></td><td>종류</td><td>REG_DWORD</td></tr><tr><td></td><td></td><td>데이터</td><td>1</td></tr></tbody></table>
+* [**Tomcat Thread 서버 관제 로그 항목 및 비정상 판단 기준**](tomcat-thread.md)
+* **기타 서비스 로그 종류 및 오류 내용** 의 목차  [**Tomcat 로그**](undefined-2.md#tomcat)
 
-3. 시스템을 재시작하여 설정을 적용합니다.
-4. 강제 블루스크린이 필요한 상황에서 우측 Ctrl 키 누른 상태에서 Scroll Lock 키 두 번 누르면 블루스크린이 발생합니다.
+### <mark style="color:$primary;">Modjk 비정상 예상 원인</mark>
 
-### <mark style="color:$primary;">**WinDbg를 통한 덤프 분석**</mark>
+mod\_jk는 Apache와 Tomcat 간 연동 모듈이며, Apache에 들어온 요청 중 Tomcat에서 처리할 요청을 8009 포트를 통해 Tomcat으로 전달하고 Tomcat이 처리한 결과를 다시 Apache에게 전달하는 역할을 합니다. 해당 로그 내용은 netstat에서 8009 포트에 관한 내용을 모니터링한 내용으로 각 항목이 임계치보다 높은 경우 확인이 필요합니다.
 
-생성된 덤프 파일을 분석하기 위한 도구로 WinDbg를 주로 사용합니다. 커널모드 덤프나 사용자모드 덤프나 분석 방법은 거의 유사합니다.
+#### TIME\_WAIT 수
 
-덤프 분석 시 자주 사용하는 WinDbg 명령어는 아래와 같습니다.
+TIME\_WAIT 상태는 TCP 연결이 정상적으로 종료된 후 소켓이 대기(약 60초)하는 동안에는 클라이언트와 서버 간의 연결이 유지되는데, 이를 TIME\_WAIT 상태라고 합니다.
 
-<table><thead><tr><th width="165">명령어</th><th>설명</th></tr></thead><tbody><tr><td><strong>!analyze -v</strong></td><td>덤프 생성 당시 예외(Exception) 또는 BugCheck에 대한 자세한 정보 출력.</td></tr><tr><td><strong>!analyze -hang</strong></td><td>덤프 생성 당시 멈춤(hang) 관련 정보를 분석하여 출력.</td></tr><tr><td><strong>k</strong></td><td>현재 활성화된 스레드의 스택 프레임(콜스택) 정보를 출력.</td></tr><tr><td><strong>lmvm [패턴]</strong></td><td>주어진 패턴과 일치하는 모든 모듈의 상세 정보를 출력. 예) lmvm plus* (plus로 시작하는 모든 모듈 정보 표시)</td></tr><tr><td><strong>lm</strong></td><td>활성화된 모든 모듈 정보를 출력한다.</td></tr></tbody></table>
+| <p><strong>TIME_WAIT 증가의 원인</strong> </p><p></p><ol><li>요청이 많은 경우 증가할 수 있음</li><li>네트워크 환경이 불안정하여, 패킷 손실이나 지연으로 인해 소켓 연결이 즉시 닫히지 않을 경우 발생</li><li>Tomcat, Apache 서비스의 장애로 인한 영향</li><li>서버의 리소스가 부족으로 인해 발생</li><li>기타 네트워크 구성이나 방화벽으로 인한 문제로 소켓 연결이 종료되지 않는 문제</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-분석 절차는 아래와 같습니다.
+원인 분석 시 참고: &#x20;
 
-1. &#x20;WinDbg를 실행한 후 **File** 메뉴의 **Open Crash Dump…** 메뉴를 통해 덤프 파일을 읽는다.
-2. Command 창에 명령어 !analyze –v 입력하여 분석 시작합니다.
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Apache 로그**](undefined-2.md#apache)
+* \[**Apache 상태 서버 관제 로그 항목 및 비정상 판단 기준**]\(http://서버 모니터링 로그 로그파일 서버관제 서버상황 서버 관제로그)
+* [**Tomcat Thread 서버 관제 로그 항목 및 비정상 판단 기준**](tomcat-thread.md)
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Tomcat 로그**](undefined-2.md#tomcat)
+* [**Netstat 서버 관제 로그 항목 및 비정상 판단 기준**](netstat.md)
 
-<figure><img src="../../.gitbook/assets/img_009 (47).png" alt=""><figcaption></figcaption></figure>
+#### CLOSE\_WAIT 수
 
-3. 일반적으로 예외 발생 모듈 이름이 표시됩니다.
+CLOSE\_WAIT 상태는 네트워크 소켓이 닫힐 때까지 대기하는 TCP 상태입니다. 이 상태는 일반적으로 소켓을 닫은 측과 수신 측 간의 연결 종료 프로토콜 과정 중 하나가 완료되지 않은 경우 발생할 수 있습니다.
 
-![](<../../.gitbook/assets/img_010 (41).png>)
+| <p><strong>CLOSE_WAIT 증가의 원인</strong></p><p></p><ol><li>요청이 많은 경우 증가할 수 있음</li><li>네트워크 오류나 리소스 부족 등으로 인해 소켓이 닫히지 않을 경우 발생</li><li>Apache에서 요청을 처리하지 못할 경우, 연결이 종료되지 않아 발생</li><li>Tomcat에서 오랫동안 활성화되어 있는 연결로 인해 발생</li><li>기타 네트워크 구성이나 방화벽으로 인한 문제로 소켓 연결이 종료되지 않는 문제</li></ol> |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-4. k 명령어를 통해 스택 프레임(콜스택) 정보를 확인하여 검증합니다. 목록 상단이 최근 호출 정보입니다. 목록 상단부터 예외를 발생하는 모듈을 찾습니다. 이때, ntdll, KERNELBASE, kernel32 등 과 같은 MS에서 배포한 운영체제 모듈은 예외로 합니다.
+원인 분석 시 참고: &#x20;
 
-![](<../../.gitbook/assets/img_011 (33).png>)
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Apache 로그**](undefined-2.md#apache)
+* \[**Apache 상태 서버 관제 로그 항목 및 비정상 판단 기준**]\(http://서버 모니터링 로그 로그파일 서버관제 서버상황 서버 관제로그)
+* [**Tomcat Thread 서버 관제 로그 항목 및 비정상 판단 기준**](tomcat-thread.md)
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Tomcat 로그**](undefined-2.md#tomcat)
+* [**Netstat 서버 관제 로그 항목 및 비정상 판단 기준**](netstat.md)
 
-5. lmvm \*<\*_모듈명>_  명령어로 입력하여 모듈과 연관된 제품 및 회사 정보를 찾습니다
+#### ESTABLISHED 수
 
-![](<../../.gitbook/assets/img_012 (30).png>)
+ESTABLISHED 상태는 연결된 상태로 데이터를 주고받을 수 있습니다. 해당 상태의 수가 증가하는 것은 정상적인 상황이나, 비정상적으로 증가하는 경우 확인이 필요합니다.
 
-6. 예외 발생 모듈이 당사에서 배포한 모듈인 경우 덤프 파일을 보내주시기 바랍니다.
+| <p><strong>ESTABLISHED 증가의 원인</strong> </p><p></p><ol><li>클라이언트 요청이 많아져 Apache – Tomcat 간 연결 증가</li><li>애플리케이션 서버에서 응답이 지연되는 경우</li><li>네트워크 지연에 따른 증가</li></ol> |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-사용자모드 모듈: $Program Files\NetID\PlusDrive 경로를 가지는 모든 모듈
+원인 분석 시 참고: &#x20;
 
-커널모드 모듈:  모듈 이름이 아래 목록에 포함된 모듈
+* **기타 서비스 로그 종류 및 오류 내용**의 목차  [**Apache 로그**](undefined-2.md#apache)
+* [**Apache 상태 서버 관제 로그 항목 및 비정상 판단 기준**](apache.md)
+* [**Tomcat Thread 서버 관제 로그 항목 및 비정상 판단 기준**](tomcat-thread.md)
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**Tomcat 로그**](undefined-2.md#tomcat)
+* [**Netstat 서버 관제 로그 항목 및 비정상 판단 기준**](netstat.md)
 
-* PlusFsd.sys
-* PlusFsfd.sys
-* npSecureDisk.sys
-* npNwlock.sys
-* npMtpFlt.sys
-* npRepFlt.sys
+### <mark style="color:$primary;">DB 연결 비정상 예상 원인</mark>
 
-### <mark style="color:$primary;">**Verifier**</mark>
+DB 연결이 되지 않거나 DB 서비스 이상이 생겼을 경우로 확인이 필요합니다.
 
-WinDbg로 커널모드 덤프 분석 시 예외 발생 모듈 이름이 “memory corruption”으로 표시될 수 있습니다. 이는 메모리 손상이 누적된 상황에서 예외가 발생한 것으로 모듈 이름을 특정하기 어렵습니다.
+당사는 MySQL만 장애 발생시 지원가능 합니다.
 
-![](<../../.gitbook/assets/img_013 (23).png>)
+| <p><strong>MySQL 연결 비정상의 원인</strong></p><p></p><ol><li>잘못된 계정 정보</li><li>잘못된 호스트 &#x26; 포트 정보 </li><li>MySQL 서비스가 중지되었을 경우 </li><li>방화벽 또는 네트워크 문제 </li><li>MySQL 사용자 권한 설정 문제 </li><li>동시 접속자 수 초과되었을 경우</li><li>MySQL 구성 파일의 문제인 경우 </li><li>데이터 저장 공간 부족이 문제인 경우</li></ol> |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-커널 메모리 손상은 커널 영역에서 동작하는 모든 모듈 동작에 악영향을 줍니다. 이때 시스템 메모리를 손상시키는 모듈을 먼저 찾아야 합니다. verifier.exe를 사용하면 커널 모듈 동작을 검사하고 모니터링하여 이러한 모듈을 찾을 수 있습니다. 해당 프로그램은 운영 체제 설치 시 자동 배포됩니다.
+원인 분석 시 참고: &#x20;
 
-모니터링 절차는 아래와 같습니다.
+* **기타 서비스 로그 종류 및 오류 내용**의 목차 [**MySQL 로그**](undefined-2.md#mysql)
 
-1. 윈도우 시작메뉴 명령 창에서 verifier.exe를 실행합니다.
-2. **표준 설정 만들기** 또는 **사용자 지정 설정 만들기**를 선택합니다.
+### <mark style="color:$primary;">OS 자원 사용량의 비정상 예상 원인</mark>
 
-<div align="left"><img src="../../.gitbook/assets/img_014 (19).png" alt="" width="563"></div>
+#### CPU/Memory 높을 시 확인할 사항
 
-3. 메모리 손상 모듈을 찾기 위해 **특수 풀**과 **풀 추적**을 필수 체크합니다. 테스트 유형을 많이 체크할수록 시스템 성능이 저하됩니다. 앞에서 **표준 설정 만들기**를 선택한 경우 **플래그 유형**이 **표준**인 항목들이 자동 체크됩니다.
+서버의 전체의 CPU 사용량과 메모리 사용량이 임계치보다 높은 경우로 서버 시스템과 성능 확인이 필요합니다.
 
-<div align="left"><img src="../../.gitbook/assets/img_015 (18).png" alt="" width="563"></div>
+윈도우의 경우 **작업관리자**를 통하여 CPU나 메모리를 가장 많이 사용하는 프로세스를 찾아 점검할 필요가 있습니다.
 
-4. **드라이버 이름을 목록에서 선택**을 선택합니다
+리눅스의 경우 **top** 명령어를 통하여 확인할 수 있습니다.
 
-<div align="left"><img src="../../.gitbook/assets/img_016 (18).png" alt="" width="563"></div>
+서버에 백신 또는 백업이 실행되지는 않는지도 확인이 필요합니다.
 
-5. 최근에 설치되었거나 의심되는 모듈을 선택합니다. 모듈을 많이 선택할수록 시스템 성능이 느려집니다.
+#### 디스크 용량 많을 시 확인할 사항
 
-<img src="../../.gitbook/assets/img_017 (14).png" alt="" width="563">
+각 디스크 사용량을 모니터링 합니다. 디스크 용량이 꽉 찬 경우 서비스에 영향을 주기 때문에 설정된 임계치보다 높은 경우 해당 디스크의 데이터 정리가 필요합니다.
 
-6. 설정을 저장하기 위해 **마침**을 누르고 시스템을 재시작합니다.
-7. 시스템 재시작 후 선택한 모듈 작업 진행 시 선택한 테스트 항목이 자동 검사됩니다. 검사 과정에서 실패되면 블루스크린이 발생하고 설정한 덤프 파일이 생성됩니다.
-8. 위 검사 및 모니터링은 사용자가 설정 삭제할 때까지 계속 유지됩니다. 문제가 해결되면 시스템 성능을 위해 verifier.exe를 실행 후 설정을 삭제합니다.
+### <mark style="color:$primary;">Netstat 비정상 예상 원인</mark>
 
-<div align="left"><img src="../../.gitbook/assets/img_018 (11).png" alt="" width="563"></div>
+전체 netstat에 대해 모니터링하여 남긴 로그입니다. 각 항목이 임계치보다 높은 경우 서버 확인이 필요합니다.
 
-### <mark style="color:$primary;">**분석 요청 시 필요 정보**</mark>
+#### TIME\_WAIT 수
 
-덤프 분석 요청 시 덤프 파일과 함께 보내주시면 좋은 정보들입니다.
+TIME\_WAIT 상태는 TCP 연결이 정상적으로 종료된 후 소켓이 대기(약 60초)하는 동안에는 클라이언트와 서버 간의 연결이 유지되는데, 이를 TIME\_WAIT 상태라고 합니다.
 
-* 덤프 파일 (용량이 크면 압축 필요)
-* 운영체제 버전과 플랫폼 정보 (예: Windows 10, 64비트)
-* 설치된 에이전트 버전과 커널 모듈 정보 (트레이 메뉴 **프로그램 정보** 화면 캡처)
+| <p><strong>TIME_WAIT 증가의 원인</strong> </p><p></p><ol><li>연결 요청이 빈번한 경우</li><li>종료 명령을 받지 못하는 등의 원인으로 클라이언트에서 연결 종료가 지연될 경우</li><li>DDoS 공격으로 인해 증가</li></ol> |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-![](<../../.gitbook/assets/img_019 (12).png>)
+원인 분석 시 참고:
 
-* 증상 발생 시 수행한 상세 작업 내용
-* 최근 시스템에 반영된 변경 사항(업데이트 내용)
+* [**Netstat 서버 관제 로그 항목 및 비정상 판단 기준**](netstat.md)
+
+#### CLOSE\_WAIT 수
+
+CLOSE\_WAIT 상태는 네트워크 소켓이 닫힐 때까지 대기하는 TCP 상태입니다. 이 상태는 일반적으로 소켓을 닫은 측과 수신 측 간의 연결 종료 프로토콜 과정 중 하나가 완료되지 않은 경우 발생할 수 있습니다.
+
+| <p><strong>CLOSE_WAIT 증가의 원인</strong> </p><p></p><ol><li>클라이언트에서 소켓을 제대로 닫지 않은 경우</li><li>서버에서 FIN 패킷을 제대로 처리하지 못한 경우</li><li>네트워크 장비나 방화벽 등에 의해 연결이 종료되지 않은 경우</li></ol> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+원인 분석 시 참고:&#x20;
+
+* ​[**Netstat 서버 관제 로그 항목 및 비정상 판단 기준**](netstat.md)

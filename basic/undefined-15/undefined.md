@@ -173,7 +173,7 @@
 **보안뷰어 사용 여부**는 각각의 링크 공유 기능별로 관리자가 **설정홈**에서 지정할 수 있습니다.
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-보안뷰어 기능은 문서변환 서버를 구축한 경우에 사용 가능합니다. 자세한 사항은 [**보안뷰어 사용을 위한 문서변환 시스템 소개**](../../undefined-1.md)를 참고하세요.
+보안뷰어 기능은 문서변환 서버를 구축한 경우에 사용 가능합니다. 자세한 사항은 [**보안뷰어 사용을 위한 문서변환 시스템 소개**](../../undefined-2/undefined.md)를 참고하세요.
 {% endhint %}
 
 {% hint style="success" icon="lightbulb-exclamation-on" %}
