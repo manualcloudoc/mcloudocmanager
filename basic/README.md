@@ -4,18 +4,12 @@ description: 문서중앙화 솔루션 기본 기능에 대한 설명입니다.
 
 # Basic
 
-### **관리자의 종류와 역할**
-
-* [**관리자의 종류와 역할**](undefined/undefined.md)
-
 ### **관리자 계정 관리하기**
 
+* [**관리자의 종류와 역할**](undefined/undefined.md)
 * [**관리자 계정의 이름, 비밀번호 변경하기**](undefined/undefined-1.md)
 * [**관리자 계정 이미지 등록하기**](undefined/undefined-2.md)
 * [**정보보호관리자 메뉴 편집하기**](undefined/undefined-3.md)
-
-### **서비스관리자 관리하기**
-
 * [**서비스관리자 계정 추가, 메뉴 설정하기**](undefined/undefined-4.md)
 * [**서비스관리자 계정삭제, 보안등급설정 로그 보기**](undefined/undefined-6.md)
 * [**서비스관리자 계정 변경, 삭제하기**](undefined/undefined-6.md)
@@ -25,21 +19,15 @@ description: 문서중앙화 솔루션 기본 기능에 대한 설명입니다.
 
 * [**서비스관리자가 윈도우 탐색기로 문서함 관리하는 방법**](undefined-1.md)
 
-### **웹 공통 사용 방법**
-
-* [**연산자를 이용하여 검색 범위 좁히기**](undefined-1.md)
-* [**조회한 자료를 엑셀 파일로 저장하는 방법**](undefined-2/undefined-2.md)
-* [**부서 및 사용자에게 정책을 적용하는 방법**](undefined-2/undefined-3.md)
-
-### **웹에서 클라우독 접속하기**
+### 관리자 웹페이지 사용하기
 
 * [**웹에서 언어 설정하기**](https://github.com/manualcloudoc/mcloudoc-user-manual/blob/main/zoho-export/markdown/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/basic/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0.md)
 * [**웹에서 로그인/로그아웃하기**](https://github.com/manualcloudoc/mcloudoc-user-manual/blob/main/zoho-export/markdown/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/basic/%EC%9B%B9%EC%97%90%EC%84%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83%ED%95%98%EA%B8%B0.md)
 * [**관리자 대시보드 기능 한눈에 보기**](undefined-2/undefined.md)
-
-### **즐겨찾기 메뉴 등록 및 관리하기**
-
 * [**즐겨찾기 메뉴 등록 및 관리하기**](undefined-2/undefined-1.md)
+* [**연산자를 이용하여 검색 범위 좁히기**](undefined-1.md)
+* [**조회한 자료를 엑셀 파일로 저장하는 방법**](undefined-2/undefined-2.md)
+* [**부서 및 사용자에게 정책을 적용하는 방법**](undefined-2/undefined-3.md)
 
 ### **서버 관리하기**
 
@@ -51,23 +39,14 @@ description: 문서중앙화 솔루션 기본 기능에 대한 설명입니다.
 * [**이용 중인 도메인 정보 확인하기**](undefined-4/undefined-1.md)
 * [**도메인 정보 변경, 삭제하기**](undefined-4/undefined-2.md)
 
-### **사용자 추가 및 관리하기**
+### **사용자 관리하기**
 
 * [**사용자 추가, 삭제, 정보 변경, 검색하기**](undefined-5/undefined.md)
 * [**웹에서 사용자의 개인문서함 용량 변경하기**](undefined-5/undefined-1.md)
 * [**사용자 계정 관리에서 모바일 기기 관리하기**](undefined-5/undefined-2.md)
 * [**사용자 개인문서함의 데이터 인계하기**](undefined-5/undefined-3.md)
-
-### **사용자의 가입 신청 처리하기**
-
 * [**사용자의 가입 신청 처리하기**](undefined-5/undefined-4.md)
-
-### **사용자별 개인문서함 용량 신청처리 및 이력 보기**
-
 * [**사용자별 개인문서함 용량 신청처리 및 이력 보기**](undefined-5/undefined-5.md)
-
-### **사용자 정보 변경 이력 보기**
-
 * [**사용자 정보 변경 이력 보기**](undefined-5/undefined-6.md)
 
 ### **조직도 관리하기**
@@ -82,19 +61,28 @@ description: 문서중앙화 솔루션 기본 기능에 대한 설명입니다.
 * [**최신 조직도 정보로 즉시 업데이트하기**](undefined-7/undefined-7.md)
 * [**조직도에 인사시스템 정보 반영하기**](undefined-7/undefined-8.md)
 
-### **윈도우 에이전트 설치, 관리하기**
+### 승인권자 관리하기
+
+* [**승인권자 관리하기**](./#undefined-7)
+* [**자가승인 정책 관리 및 적용하기**](undefined-8/undefined-1.md)
+* [**자가승인 정책 적용 이력 보기**](undefined-8/undefined-2.md)
+* [**자가승인권자 현황 보기**](undefined-8/undefined-3.md)
+* [**승인권자 종류 지정하기**](undefined-8/undefined-4.md)
+* [**보안등급문서 승인권자 지정하기**](undefined-8/undefined-5.md)
+* [**승인권자 종류 지정 이력 보기**](undefined-8/undefined-6.md)
+* [**보안등급문서 승인권자 지정 이력 보기**](undefined-8/undefined-7.md)
+* [**승인권자 현황 보기**](undefined-8/undefined.md)
+
+### **윈도우 에이전트 설치 관리하기**
 
 * [**윈도우 에이전트 설치 현황 및 이력 보기**](undefined-9/undefined.md)
-
-### **제품 제거 요청 처리하기**
-
 * [**제품 제거 요청 처리하기**](undefined-9/undefined-1.md)
 
 ### **통계 알아보기**
 
 * [**통계 알아보기**](undefined-10.md)
 
-### **로그정보로 파일 작업 등 모니터링하기**
+### **로그 확인하기**
 
 * [**파일 작업 로그 보기**](undefined-11/undefined.md)
 * [**폴더 권한 설정 로그 보기**](undefined-11/undefined-1.md)
