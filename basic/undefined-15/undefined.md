@@ -22,21 +22,25 @@
 
 각 보안 절차의 적용 여부는 링크 공유 기능의 종류 및 관리자의 설정에 따라 아래의 표와 같이 결정됩니다.
 
-#### 링크 공유 기능별 보안절차
+#### 링크 공유 권한 체크
 
 <table><thead><tr><th width="168.45452880859375">보안 절차</th><th width="479.663818359375">문서링크 복사            웹링크 복사                       보안 웹링크 복사
                                      링크메일                            보안 링크메일</th></tr></thead><tbody><tr><td><strong>링크 공유 권한 체크</strong></td><td><p>•        문서함별 링크 공유 허용 여부: 설정홈에서 설정*</p><p>•        링크 공유를 위해 필요한 권한: 설정홈에서 설정*</p><p>•        링크 공유를 허용할 파일 속성: 링크 공통 정책 설정</p></td></tr></tbody></table>
+
+#### 복사본 링크 생성 및 승인 절차
 
 <table data-search="false"><thead><tr><th width="168.0909423828125">보안 절차</th><th width="157.666748046875">문서링크 복사</th><th width="131.363525390625">웹링크 복사
 링크메일</th><th width="197.48480224609375">보안 웹링크 복사 
 보안 링크메일</th></tr></thead><tbody><tr><td><strong>복사본 링크 생성 여부</strong></td><td>설정홈에서 설정*</td><td>원본 링크 생성</td><td>복사본 링크 생성</td></tr><tr><td><strong>승인 절차 유무</strong></td><td>문서링크 정책에서 설정</td><td>없음</td><td>설정홈에서 설정*</td></tr></tbody></table>
 
+#### 수신자 인증
+
 <table data-search="false"><thead><tr><th width="156.5758056640625">보안 절차</th><th width="217.06072998046875">문서링크 복사</th><th width="331.9696044921875">웹링크 복사                     웹링크 복사 
 링크메일보안                  보안 링크메일</th></tr></thead><tbody><tr><td><strong>수신자 인증</strong></td><td><p><strong>문서링크 정책에서 사용 여부 설정</strong></p><ul><li>에이전트 로그인 인증 </li><li>이메일 OTP 인증</li><li>패스워드 인증 </li></ul><p><strong>설정홈에서 사용 여부 설정*</strong> </p><ul><li>부서문서함 권한 인증</li></ul></td><td><p><strong>기본 제공 (사용자 선택)</strong> </p><ul><li>패스워드 인증 </li></ul><p><strong>설정홈에서 사용 여부 설정*</strong> </p><ul><li>에이전트 로그인 인증 (보안 웹링크 복사 및 보안 링크메일에 한함) </li><li>웹 로그인 인증 </li><li>이메일OTP 인증</li></ul></td></tr></tbody></table>
 
-**다운로드/열람 제한**
+#### **다운로드/열람 제한**
 
-<table data-search="false"><thead><tr><th width="156.5758056640625">링크 공유 기능별 보안 절차</th><th width="160.09100341796875">문서링크 복사</th><th width="331.9696044921875">웹링크 복사                     웹링크 복사 
+<table data-search="false"><thead><tr><th width="156.5758056640625">보안 절차</th><th width="160.09100341796875">문서링크 복사</th><th width="331.9696044921875">웹링크 복사                     웹링크 복사 
 링크메일보안                  보안 링크메일</th></tr></thead><tbody><tr><td><strong>보안뷰어</strong></td><td>설정홈에서 설정*</td><td>설정홈에서 설정*</td></tr><tr><td><strong>다운로드 기간/횟수 제한</strong></td><td>문서링크 정책 설정</td><td>설정홈에서 설정*</td></tr><tr><td><strong>압축 다운로드 용량 제한</strong></td><td>없음</td><td>설정홈에서 설정*</td></tr><tr><td><strong>웹 브라우저 제한</strong></td><td>없음</td><td>설정홈에서 설정*</td></tr></tbody></table>
 
 {% hint style="warning" icon="square-poll-horizontal" %}
@@ -47,7 +51,9 @@
 리뉴얼 버전의 **대외용 웹링크** 기능의 경우, 대외문서교환 서버에 복사된 파일에 대한 웹링크가 제공된다는 점 외에는 대부분의 기능 옵션과 설정이 **문서링크 복사**와 동일합니다. 본 아티클에서 대외용 웹링크에 대한 언급이 별도로 없을 경우에는 문서링크 복사에 대한 설명을 참고하시기 바랍니다.
 {% endhint %}
 
-### 링크 공유 사용 권한 체크
+
+
+### <mark style="color:$primary;">링크 공유 사용 권한 체크</mark>
 
 사용자가 특정 파일의 링크를 공유하기 위해서는 해당 파일에 대한 링크 공유 사용 권한을 보유해야 합니다.
 
