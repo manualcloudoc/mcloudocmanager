@@ -1,7 +1,3 @@
----
-description: Category for Mobile module
----
-
 # FAQ
 
 #### DiskLock 문제 해결

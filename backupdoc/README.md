@@ -4,7 +4,7 @@ description: Category for BackupDoc.com and BackupDoc Appliance
 
 # BackupDoc
 
-### BackupDoc 일반
+### BackupDoc 관리 소개
 
 * [**BackupDoc(백업독) 소개**](backupdoc/backupdoc.md)
 * [**BackupDoc 관리자의 종류와 역할**](backupdoc/backupdoc-1.md)
