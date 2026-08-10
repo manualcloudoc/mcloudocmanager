@@ -1,7 +1,3 @@
----
-description: Category for BackupDoc.com and BackupDoc Appliance
----
-
 # BackupDoc
 
 ### BackupDoc 관리 소개

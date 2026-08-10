@@ -1,7 +1,3 @@
----
-description: Category for PC Backup module
----
-
 # PC Backup
 
 * [**PC 백업 정책 관리하기**](pc.md)

@@ -1,7 +1,3 @@
----
-description: Category for External DRM module
----
-
 # 외부 DRM
 
 * [**외부DRM 로컬저장금지 정책 설정하기**](drm.md)

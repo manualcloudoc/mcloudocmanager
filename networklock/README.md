@@ -1,7 +1,3 @@
----
-description: Category for NetworkLock module
----
-
 # NetworkLock
 
 * [**NetworkLock 관리자 정책 소개**](networklock.md)

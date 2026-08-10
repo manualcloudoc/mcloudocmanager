@@ -1,7 +1,3 @@
----
-description: Category for DiskLock Plus module
----
-
 # DiskLock Plus
 
 ### **DiskLock Plus 관리하기**
