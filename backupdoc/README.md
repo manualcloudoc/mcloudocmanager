@@ -1,5 +1,7 @@
 # BackupDoc
 
+BackupDoc 관리 방법을 다음 목차에 따라 안내합니다. 본 기능은 BackupDoc 서비스 구매 시 사용 가능합니다.&#x20;
+
 ### BackupDoc 관리 소개
 
 * [**BackupDoc(백업독) 소개**](backupdoc/backupdoc.md)

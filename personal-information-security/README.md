@@ -2,7 +2,7 @@
 
 개인정보를 관리하는 방법을 다음 목차에 따라 안내합니다. 본 기능은 개인정보보호 모듈 구매 시 사용 가능합니다.       &#x20;
 
-개인정보보호 기능에 대한 소개는 사용자 매뉴얼 - [**개인정보보**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/undefined-3)**호**를참고합니다.
+개인정보보호 기능에 대한 소개는 사용자 매뉴얼 - [**개인정보보호**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/undefined-3)를참고합니다.
 
 * [**개인정보 검출 요약 정보 보기**](undefined.md)
 * [**검출할 개인정보 패턴의 사용 여부 설정하기**](undefined-1.md)
