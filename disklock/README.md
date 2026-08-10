@@ -1,5 +1,7 @@
 # DiskLock
 
+DiskLock 모듈에 대한 내용입니다. DiskLock 기능에 대한 설명은 사용자 매뉴얼 -[ **DIskLock**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/disklock)을 참고합니다.
+
 ### **DiskLock 관리하기**
 
 * [**관리자가 파일수집 정책 관리하는 방법**](disklock/undefined.md)
