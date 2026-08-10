@@ -1,5 +1,7 @@
 # DiskLock Plus
 
+DiskLock Plus 기능의 관리 방법을 다음 목차에 따라 안내합니다. DiskLock Plus 기능에 대한 소개는 사용자 매뉴얼 - [**DIskLock Plus**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/disklock-plus)를참고합니다.
+
 ### **DiskLock Plus 관리하기**
 
 * [**화면 캡처 금지 정책 관리하기**](disklock-plus/undefined.md)
