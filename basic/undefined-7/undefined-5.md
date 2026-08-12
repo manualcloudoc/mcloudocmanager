@@ -7,7 +7,7 @@
 관리자는 조직도 편집기에서 팀장 및 팀문서관리자를 지정할 수 있습니다.팀장 및 팀문서관리자로 지정된 사용자에게는 부서 내 문서의 반출, 링크 생성, 보안 해제 등 보안상 결재가 필요한 요청에 대한 승인 권한이 부여됩니다.
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-팀장 및 팀문서관리자에 대한 자세한 사항은 [**사용자의 종류와 역할**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/concept/user)을 참고하세요.
+팀장 및 팀문서관리자에 대한 자세한 사항은 [**사용자의 종류와 역할**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined/user)을 참고하세요.
 {% endhint %}
 
 #### <mark style="color:$primary;">팀문서관리자 지정하기</mark>

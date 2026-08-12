@@ -39,7 +39,7 @@
 폴더관리자를 설정하는 세부적인 방법은 [**폴더관리자 설정하기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined-3/undefined-1)를 참고하세요.&#x20;
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-**폴더관리자**에 대한 자세한 사항은 [**사용자의 종류와 역할**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/concept/user)을 참고하세요.
+**폴더관리자**에 대한 자세한 사항은 [**사용자의 종류와 역할**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined/user)을 참고하세요.
 {% endhint %}
 
 #### 폴더 권한 설정하기

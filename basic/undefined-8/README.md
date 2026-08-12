@@ -1,6 +1,6 @@
 # 승인권자 관리하기
 
-중앙문서함에서 문서를 반출하는 등 보안상 유의가 필요한 작업에는 승인권자의 승인 절차가 동반됩니다. 승인권자에 대한 설명은 사용자 매뉴얼 – [<mark style="color:$warning;">**승인권자 및 결재 방식 소개**</mark>](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/concept/approve)를 참고합니다.
+중앙문서함에서 문서를 반출하는 등 보안상 유의가 필요한 작업에는 승인권자의 승인 절차가 동반됩니다. 승인권자에 대한 설명은 사용자 매뉴얼 – [<mark style="color:$warning;">**승인권자 및 결재 방식 소개**</mark>](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined/approve)를 참고합니다.
 
 다음 표는 승인이 요구되는 작업들에 대해 승인권자의 종류별 승인 가능 여부를 정리한 것입니다.
 
