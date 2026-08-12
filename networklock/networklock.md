@@ -66,8 +66,6 @@ SmartScreen을 지원하기 위해 접속이 허용되어야 하는 도메인은
 * [https://learn.microsoft.com/ko-kr/deployedge/microsoft-edge-security-endpoints](https://learn.microsoft.com/ko-kr/deployedge/microsoft-edge-security-endpoints)&#x20;
 {% endhint %}
 
-
-
 {% hint style="warning" icon="square-poll-horizontal" %}
 Windows 업데이트를 위해서는 다음과 같은 도메인으로의 접속이 허용되어야 합니다.
 
@@ -85,12 +83,6 @@ Windows 업데이트를 위해서는 다음과 같은 도메인으로의 접속�
 [https://learn.microsoft.com/ko-kr/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#211-configure-your-firewall-to-allow-your-first-wsus-server-to-connect-to-microsoft-domains-on-the-internet](https://learn.microsoft.com/ko-kr/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#211-configure-your-firewall-to-allow-your-first-wsus-server-to-connect-to-microsoft-domains-on-the-internet)
 {% endhint %}
 
-
-
-
-
-
-
 {% hint style="danger" %}
 업무용 서버 및 웹사이트에서 외부 서버와 연동이 필요하거나 다른 웹사이트로의 링크(외부 URL 참조)가 존재할 경우, 외부 서버 또는 웹사이트의 IP/도메인 주소도 추가되어야 합니다.
 
@@ -98,7 +90,7 @@ Windows 업데이트를 위해서는 다음과 같은 도메인으로의 접속�
 
 필요한 모든 주소가 추가되지 않을 경우, 서버/웹사이트의 기능이 정상적으로 동작하지 않거나, 이미지/동영상 등이 표시되지 않을 수 있습니다.
 
-서버/웹사이트가 정상적으로 동작하지 않을 경우, 추가적으로 허용해야 할 IP/도메인 주소를 찾아내는 방법은 [**NetworkLock 사용 시 인터넷 사이트 접속 관련 오류 해결 방법**](../mobile/networklock.md)을 참고하세요.
+서버/웹사이트가 정상적으로 동작하지 않을 경우, 추가적으로 허용해야 할 IP/도메인 주소를 찾아내는 방법은 **관리자 FAQ**의 [**NetworkLock 사용 시 인터넷 사이트 접속 관련 오류 해결 방법**](https://support.mcloudoc.com/portal/ko/kb/articles/networklock-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%91%EC%86%8D-%EA%B4%80%EB%A0%A8-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95)을 참고하세요.
 {% endhint %}
 
 #### 내부망 모드 제한 사항
