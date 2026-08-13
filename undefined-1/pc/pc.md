@@ -70,7 +70,17 @@ PC 보안을 위한 통합 정책은 DiskLock과 DiskLock Plus모듈의 기능�
 
 다음 표는 기본 정책이 적용되었을 때 중앙문서함(안전구역)과 C드라이브(고정 디스크, 비안전구역)에서의 문서 작업이 허용/차단되는 예를 케이스별로 정리한 것입니다.
 
-<table data-search="false"><thead><tr><th width="182">사용 애플리케이션</th><th>작업 종류</th><th>파일 위치</th><th>정책 처리 결과</th></tr></thead><tbody><tr><td><strong>Business Applications : Word, Powerpoint, AutoCAD 등</strong></td><td>문서 열람</td><td>중앙문서함</td><td>허용</td></tr><tr><td></td><td></td><td>C드라이브</td><td>허용</td></tr><tr><td></td><td>문서 저장</td><td>중앙문서함</td><td>허용</td></tr><tr><td></td><td></td><td>C드라이브</td><td>차단</td></tr><tr><td><strong>미분류 카테고리 : 비업무용 애플리케이션 또는 자동 분류되지 않은 신규 애플리케이션</strong></td><td>문서 열람</td><td>중앙문서함</td><td>차단</td></tr><tr><td></td><td></td><td>C드라이브</td><td>허용</td></tr><tr><td></td><td>문서 저장</td><td>중앙문서함</td><td>차단</td></tr><tr><td></td><td></td><td>C드라이브</td><td>허용</td></tr><tr><td><strong>Export Applications : Chrome, Outlook, KakaoTalk 등</strong></td><td>문서 첨부</td><td>중앙문서함</td><td>차단 (DOC_EXPORT폴더는 허용)</td></tr><tr><td></td><td></td><td>C드라이브</td><td>차단</td></tr><tr><td></td><td>문서 다운로드</td><td>중앙문서함</td><td>허용</td></tr><tr><td></td><td></td><td>C드라이브</td><td>차단</td></tr></tbody></table>
+1. **Business Applications : Word, Powerpoint, AutoCAD 등**
+
+<table data-search="false"><thead><tr><th width="363">작업 종류 / 파일 위치</th><th>정책 처리 결과</th></tr></thead><tbody><tr><td>중앙문서함 문서 열람</td><td>허용</td></tr><tr><td>C드라이브 문서 열람</td><td>허용</td></tr><tr><td>중앙문서함에 문서 저장</td><td>허용</td></tr><tr><td>C드라이브 문서 저장</td><td>차단</td></tr></tbody></table>
+
+2. **미분류 카테고리 : 비업무용 애플리케이션 또는 자동 분류되지 않은 신규 애플리케이션**
+
+<table data-search="false"><thead><tr><th width="366">작업 종류 / 파일 위치</th><th>정책 처리 결과</th></tr></thead><tbody><tr><td>중앙문서함 문서 열람</td><td>차단</td></tr><tr><td>C드라이브 문서 열람</td><td>허용</td></tr><tr><td>중앙문서함에 문서 저장</td><td>차단</td></tr><tr><td>C드라이브에 문서 저장</td><td>허용</td></tr></tbody></table>
+
+3. **Export Applications : Chrome, Outlook, KakaoTalk 등**
+
+<table data-search="false"><thead><tr><th>작업 종류 / 파일 위치</th><th>정책 처리 결과</th></tr></thead><tbody><tr><td>중앙문서함 문서 첨부</td><td>차단 (DOC_EXPORT폴더는 허용)</td></tr><tr><td>C드라이브 문서 첨부</td><td>차단</td></tr><tr><td>중앙문서함에 문서 다운로드</td><td>허용</td></tr><tr><td>C드라이브에 문서 다운로드</td><td>차단</td></tr></tbody></table>
 
 {% hint style="warning" icon="square-poll-horizontal" %}
 로컬저장금지 정책에 대한 상세한 설명은 [**로컬저장금지 정책 소개**](../../disklock/disklock/undefined-2.md)를 참고합니다.
