@@ -1,5 +1,7 @@
 # 대외교환서버 전용 설정
 
-![Info](<../../.gitbook/assets/img_000 (195).png>) 메뉴 경로: 시스템 설정 - 설정 홈 연결 - 일반 모듈 설정 - 대외교환서버 전용 설정
+{% hint style="info" %}
+메뉴 경로: 시스템 설정 - 설정 홈 연결 - 일반 모듈 설정 - 대외교환서버 전용 설정
+{% endhint %}
 
 <table><thead><tr><th width="198">대외교환서버 옵션</th><th width="430">내용</th><th>기본값</th></tr></thead><tbody><tr><td><strong>​내부 문서중앙화 서비스</strong></td><td>대외교환서버에서 내부 운영 웹서버와 통신을 하기 위한 정보를 등록합니다.</td><td></td></tr><tr><td><ul><li>변환 서버 정보 변경</li></ul></td><td>웹서버의 서버주소, http포트, https 포트를 설정합니다.</td><td></td></tr><tr><td><strong>​</strong> <strong>게스트 업로드 파티션 정보</strong></td><td><p>​게스트 ID 로 업로드 시 대외용서버에 저장되는 파티션 정보를 입력합니다.</p><p></p><ul><li>윈도우: 드라이브문자_파티션명 (예: d_proxyguest)</li><li>리눅스: 파티션명 (예: proxyguest) ​</li></ul></td><td></td></tr><tr><td><strong>​</strong> <strong>게스트 업로드 실제 경로</strong></td><td>​게스트 ID로 문서 업로드 시 대외용서버에 저장되는 실제 경로를 입력합니다. (예: d:\plusdrive\proxyguest)</td><td></td></tr><tr><td><strong>​</strong> <strong>다운로드 인증</strong></td><td>​이 설정은 대외교환서버 리뉴얼 전 버전 까지만 사용합니다. 리뉴얼 버전 이후로는 관리자 메뉴에서 직접 설정합니다.</td><td></td></tr><tr><td><ul><li>사용자 인증 사용</li></ul></td><td>다운로드 페이지에서 윈도우 에이전트 로그인 정보 또는 ID/PASSWORD 로그인 정보로 인증 사용 여부를 설정합니다.</td><td>​ 사용 안 함</td></tr><tr><td><ul><li>OTP 인증 사용</li></ul></td><td>이메일을 OTP인증을 사용하여 사용자 인증 여부를 설정합니다.</td><td>사용 안 함</td></tr><tr><td><blockquote><ul><li>메일 도메인 설정 사용</li></ul></blockquote></td><td>OTP 인증 시 이메일의 도메인 선택 가능 여부를 설정합니다.</td><td>사용 안 함</td></tr><tr><td><blockquote><ul><li>메일 도메인 목록</li></ul></blockquote></td><td>​인증 가능한 메일 도메인을 등록합니다.</td><td></td></tr></tbody></table>
