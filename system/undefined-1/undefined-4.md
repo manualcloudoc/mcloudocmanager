@@ -2,7 +2,7 @@
 
 문서중앙화 서버에서 변환되는 파일의 이름과 구조 및 내부적으로 관리하는 특수 파일에 대해 설명합니다.&#x20;
 
-#### <mark style="color:$primary;">문서 파일</mark>
+### <mark style="color:$primary;">문서 파일</mark>
 
 문서 파일은 서버에 저장될 때 암호화나 헤더 추가 등으로 파일의 이름이 변환됩니다. 여기서는 변환되는 문서 파일의 이름과 구조에 대해 설명합니다.
 
@@ -20,7 +20,7 @@
 
 <table><thead><tr><th width="152">파일 헤더 여부</th><th width="200">파일 암호화 여부</th><th>저장 파일명</th></tr></thead><tbody><tr><td><strong>사용 안함</strong></td><td>평문</td><td>report%251.docx</td></tr><tr><td></td><td>암호화</td><td>report%251.docx.secure+</td></tr><tr><td><strong>사용함</strong></td><td>평문</td><td>report%251.docx.cld+</td></tr><tr><td></td><td>암호화</td><td>report%251.docx.secure+.cld+8</td></tr></tbody></table>
 
-#### <mark style="color:$primary;">특수 파일</mark>
+### <mark style="color:$primary;">특수 파일</mark>
 
 내부적으로 파일시스템을 관리하기 위해 사용하는 특수 파일들이 다음과 같습니다.
 
