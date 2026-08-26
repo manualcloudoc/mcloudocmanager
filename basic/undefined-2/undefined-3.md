@@ -23,7 +23,7 @@
 
 <figure><img src="../../.gitbook/assets/img_001 (39).png" alt=""><figcaption></figcaption></figure>
 
-* 우측 상단의 검색  ![](<../../.gitbook/assets/img_002 (34).png>)버튼을 클릭하여 \*\*‘검색’\*\*창에서 부서 또는 사용자를 검색하여 선택합니다. 이때 사용자의 이름/ID 또는 부서명으로 검색할 수 있으며, 문자열의 일부만 입력해도 검색이 가능합니다. &#x20;
+* 우측 상단의 검색  ![](<../../.gitbook/assets/img_002 (34).png>)버튼을 클릭하여 ‘**검색’**&#xCC3D;에서 부서 또는 사용자를 검색하여 선택합니다. 이때 사용자의 이름/ID 또는 부서명으로 검색할 수 있으며, 문자열의 일부만 입력해도 검색이 가능합니다. &#x20;
 
 <figure><img src="../../.gitbook/assets/img_003 (29).png" alt=""><figcaption></figcaption></figure>
 
