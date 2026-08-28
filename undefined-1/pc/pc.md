@@ -40,7 +40,7 @@ PC 보안을 위한 통합 정책은 DiskLock과 DiskLock Plus모듈의 기능�
 
 3. **애플리케이션 이름** 항목에 프로그램 실행 파일명(프로세스명, 예: WINWORD.EXE)을 입력한 후, **검색** 버튼을 클릭합니다. 대소문자 구별 없이 이름의 일부만 입력하여 검색이 가능합니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/img_004 (87).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/img_004 (87).png" alt=""><figcaption></figcaption></figure></div>
 
 * 위 그림(Microsoft Word의 예)과 같이 애플리케이션이 이미 분류되어 있는 경우, 애플리케이션 카테고리의 전체 경로를 확인할 수 있습니다. 하단의 **확인** 버튼을 클릭하면 다음 그림과 같이 해당 카테고리의 애플리케이션 목록 화면으로 이동할 수 있습니다.
 

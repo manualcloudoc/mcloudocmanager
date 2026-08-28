@@ -2,7 +2,7 @@
 
 관리자가 문서중앙화 서비스를 시작하기 전에 필수적으로 알아야 **중앙문서함**과 **PC 보안 기능**에 대해 간략히 설명합니다.
 
-### **중앙문서함 소개**
+### <mark style="color:$primary;">**중앙문서함 소개**</mark>
 
 문서중앙화 솔루션을 사용하면 업무와 관련된 모든 문서를 중앙문서함에 저장하여 안전하고 체계적으로 관리할 수 있습니다. 중앙문서함은 사용자의 권한에 따라 영역별로 접근이 통제되는 문서중앙화 서버의 저장 공간으로, 다음과 같은 종류가 있습니다.
 
@@ -10,7 +10,7 @@
 
 사용자가 윈도우 PC에서 문서중앙화 에이전트를 실행하면 다음 그림과 같이 파일 탐색기에서 중앙문서함 드라이브에 접근할 수 있습니다. 또한, Mac PC나 모바일 기기에서도 앱을 통해 중앙문서함에 접근할 수 있습니다.<br>
 
-<figure><img src="../../.gitbook/assets/img_000 (164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/img_000 (164).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" icon="square-poll-horizontal" %}
 관리자가 사용을 설정한 경우, 윈도우 PC에서 문서중앙화 에이전트 실행 시 중앙문서함 드라이브 외에도 상황에 따라 온라인/오프라인/반출 보안디스크를 사용할 수 있습니다. 자세한 내용은 [**보안디스크 소개**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/disklock/undefined-2)를 참고합니다.
@@ -31,7 +31,7 @@
 
 문서반출 기능의 예를 들어 알아봅니다. 다음 그림은 문서반출 정책을 관리하는 화면으로, 기본 정책 내용이 표시되어 있습니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/img_002 (131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/img_002 (131).png" alt=""><figcaption></figcaption></figure>
 
 관리자는 기본 정책 외에도 결재 방식, 반출 가능한 용량, 반출 가능한 디스크 등을 달리 하여 새로운 정책(아래 표에서 **00001.영업팀정책**)을 생성할 수 있습니다.&#x20;
 
@@ -39,4 +39,4 @@
 
 또한, 관리자는 부서 또는 사용자에 따라 다른 정책을 적용할 수 있습니다. 다음 그림은 전 직원에게 **00000.기본정책**을 적용하고 국내영업팀과 차은우에게만 **00001.영업팀정책**을 적용한 예입니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/img_003 (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/img_003 (114).png" alt=""><figcaption></figcaption></figure>
