@@ -62,14 +62,14 @@
 ### 승인권자 관리하기
 
 * [**승인권자 관리하기**](./#undefined-7)
-* [**자가승인 정책 관리 및 적용하기**](undefined-8/undefined-1.md)
-* [**자가승인 정책 적용 이력 보기**](undefined-8/undefined-2.md)
-* [**자가승인권자 현황 보기**](undefined-8/undefined-3.md)
-* [**승인권자 종류 지정하기**](undefined-8/undefined-4.md)
-* [**보안등급문서 승인권자 지정하기**](undefined-8/undefined-5.md)
-* [**승인권자 종류 지정 이력 보기**](undefined-8/undefined-6.md)
-* [**보안등급문서 승인권자 지정 이력 보기**](undefined-8/undefined-7.md)
-* [**승인권자 현황 보기**](undefined-8/undefined.md)
+* [**자가승인 정책 관리 및 적용하기**](undefined-8/undefined.md)
+* [**자가승인 정책 적용 이력 보기**](undefined-8/undefined-1.md)
+* [**자가승인권자 현황 보기**](undefined-8/undefined-2.md)
+* [**승인권자 종류 지정하기**](undefined-8/undefined-3.md)
+* [**보안등급문서 승인권자 지정하기**](undefined-8/undefined-4.md)
+* [**승인권자 종류 지정 이력 보기**](undefined-8/undefined-5.md)
+* [**보안등급문서 승인권자 지정 이력 보기**](undefined-8/undefined-6.md)
+* [**승인권자 현황 보기**](undefined-8/undefined-7.md)
 
 ### **윈도우 에이전트 설치 관리하기**
 

@@ -111,11 +111,11 @@
 **승인권자**는 사용자가 링크 공유 요청 시 승인권자 목록에서 확인하거나, 경우에 따라 목록에서 선택할 수 있습니다. 승인권자에 대한 자세한 사항은 사용자 매뉴얼 - [<mark style="color:$warning;">**승인권자 및 결재 방식 소개**</mark>](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined/approve) 를 참고하세요.&#x20;
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-부서문서함 문서의 링크를 공유하는 경우에는 팀문서관리자와 폴더관리자가 모두 승인권자가 될 수 있으며, 관리자가 부서문서함/폴더별로 승인권자의 종류를 지정(팀문서관리자와 폴더관리자 중 택일)할 수 있습니다. 승인권자의 종류를 지정하는 방법은 [**승인권자 종류 지정하기**](../undefined-8/undefined-4.md)를 참고합니다.
+부서문서함 문서의 링크를 공유하는 경우에는 팀문서관리자와 폴더관리자가 모두 승인권자가 될 수 있으며, 관리자가 부서문서함/폴더별로 승인권자의 종류를 지정(팀문서관리자와 폴더관리자 중 택일)할 수 있습니다. 승인권자의 종류를 지정하는 방법은 [**승인권자 종류 지정하기**](../undefined-8/undefined-3.md)를 참고합니다.
 {% endhint %}
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-관리자가 자가 승인을 허용한 경우에는 승인권자가 사용자 본인으로 고정됩니다. 자가 승인 정책을 설정하고 부서/사용자별로 적용하는 방법은 [<mark style="color:$warning;">**자가승인 정책 관리 및 적용하기**</mark>](../undefined-8/undefined-1.md)를 참고합니다.
+관리자가 자가 승인을 허용한 경우에는 승인권자가 사용자 본인으로 고정됩니다. 자가 승인 정책을 설정하고 부서/사용자별로 적용하는 방법은 [<mark style="color:$warning;">**자가승인 정책 관리 및 적용하기**</mark>](../undefined-8/undefined.md)를 참고합니다.
 {% endhint %}
 
 {% hint style="warning" icon="square-poll-horizontal" %}

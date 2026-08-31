@@ -10,7 +10,7 @@
 팀장 및 팀문서관리자에 대한 자세한 사항은 [**사용자의 종류와 역할**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/undefined/user)을 참고하세요.
 {% endhint %}
 
-#### <mark style="color:$primary;">팀문서관리자 지정하기</mark>
+### <mark style="color:$primary;">팀문서관리자 지정하기</mark>
 
 부서 내 복수의 사용자를 각각 팀문서관리자로 지정할 수 있습니다.
 
@@ -28,7 +28,7 @@
 
 ![](<../../.gitbook/assets/img_004 (45).png>)
 
-#### <mark style="color:$primary;">팀장 지정하기</mark>
+### <mark style="color:$primary;">팀장 지정하기</mark>
 
 다음과 같이 팀문서관리자를 선택하여 팀장으로 지정할 수 있습니다.  팀장은 부서 내에서 대표로 한 명만 지정할 수 있으며, 팀문서관리자와 동일한 권한을 가집니다.
 

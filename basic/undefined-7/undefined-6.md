@@ -6,7 +6,7 @@
 
 &#x20;관리자는 조직도 편집기를 통해 부서문서함을 생성하거나 관리, 삭제할 수 있습니다.
 
-#### <mark style="color:$primary;">부서문서함 생성하기</mark>
+### <mark style="color:$primary;">부서문서함 생성하기</mark>
 
 부서문서함은 부서원이 협업할 수 있도록 생성된 문서 저장 공간입니다.  부서문서함은 전사 또는 부서 단위로 생성 가능하며, 드라이브 형태로 구분되어 사용자에게 표시됩니다.&#x20;
 
@@ -26,7 +26,7 @@
 
 ![](<../../.gitbook/assets/img_003 (51).png>)
 
-#### <mark style="color:$primary;">부서문서함 관리하기</mark>
+### <mark style="color:$primary;">부서문서함 관리하기</mark>
 
 생성된 부서문서함의 할당 용량, 이름, 연결할 드라이브 정보를 변경할 수 있습니다.
 
@@ -49,7 +49,7 @@
 
 {% embed url="https://youtu.be/c-l6EnT2OF0?si=Qcqbc_RDO3VG2OrK&t=982" %}
 
-#### <mark style="color:$primary;">부서문서함 삭제하기</mark>
+### <mark style="color:$primary;">부서문서함 삭제하기</mark>
 
 더 이상 사용하지 않는 부서문서함을 삭제합니다. 삭제된 부서문서함 드라이브는 더 이상 사용자에게 표시되지 않습니다.
 
