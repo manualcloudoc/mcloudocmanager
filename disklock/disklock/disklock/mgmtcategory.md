@@ -2,11 +2,11 @@
 
 ### <mark style="color:$primary;">애플리케이션 관리 화면 살펴보기</mark>
 
-애플리케이션 카테고리를 관리하기 위해서는 DiskLock 콘솔에서 **애플리케이션 관리 - 카테고리 분류** 메뉴를 선택합니다. 다음과 같이 <img src="../../../.gitbook/assets/image (77).png" alt="" data-size="line">![](<../../../.gitbook/assets/image (146).png>) **애플리케이션 카테고리 트리**, <img src="../../../.gitbook/assets/image (78).png" alt="" data-size="line">![](<../../../.gitbook/assets/image (148).png>)**도구모음**, <img src="../../../.gitbook/assets/image (79).png" alt="" data-size="line"> **애플리케이션 목록**으로 구성된 애플리케이션 관리 화면이 나타납니다.
+애플리케이션 카테고리를 관리하기 위해서는 DiskLock 콘솔에서 **애플리케이션 관리 - 카테고리 분류** 메뉴를 선택합니다. 다음과 같이 <img src="../../../.gitbook/assets/image (77).png" alt="" data-size="line"> **애플리케이션 카테고리 트리**, <img src="../../../.gitbook/assets/image (78).png" alt="" data-size="line"> **도구모음**, <img src="../../../.gitbook/assets/image (79).png" alt="" data-size="line"> **애플리케이션 목록**으로 구성된 애플리케이션 관리 화면이 나타납니다.
 
-![](<../../../.gitbook/assets/img_003 (80).png>)
+<div align="left"><figure><img src="../../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure></div>
 
-#### <img src="../../../.gitbook/assets/image (147).png" alt="" data-size="line">애플리케이션 카테고리 트리
+#### <img src="../../../.gitbook/assets/image (147).png" alt="" data-size="line"> 애플리케이션 카테고리 트리
 
 현재 정의된 애플리케이션 카테고리의 계층 구조를 트리 형태로 보여주는 부분입니다. 하위 애플리케이션 카테고리가 있는 경우에는 애플리케이션 카테고리를 더블 클릭하거나 이름 왼쪽의 +를 클릭하면 하위 애플리케이션 카테고리가 표시됩니다. 카테고리로 분류된 애플리케이션이 있으면 카테고리 이름을 클릭했을 때 해당 카테고리로 분류된 애플리케이션의 목록이 우측 <img src="../../../.gitbook/assets/image (81).png" alt="" data-size="line">부분에 표시됩니다.
 
@@ -14,19 +14,21 @@
 
 애플리케이션 카테고리 트리에서 카테고리를 선택하고 마우스를 우클릭하면 하위 카테고리를 추가하거나 선택한 카테고리를 삭제하거나 이름을 변경할 수 있는 메뉴로 구성된 **컨텍스트 메뉴**가 나타납니다.
 
-<div align="left"><img src="../../../.gitbook/assets/img_006 (43).png" alt="" width="375"></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure></div>
 
 #### <img src="../../../.gitbook/assets/image (149).png" alt="" data-size="line"> 도구모음
 
 도구모음에는 애플리케이션 카테고리를 관리하는 데 필요한 기능들이 아이콘 형태로 제공됩니다. 도구모음의 아이콘은 현재 상황에서 사용할 수 있는 아이콘만 활성화됩니다. 각 아이콘의 기능은 다음과 같습니다.
 
-<table data-search="false"><thead><tr><th width="137.72723388671875">아이콘</th><th>기능</th></tr></thead><tbody><tr><td><strong>새 카테고리</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리에 새로운 하위 카테고리를 만듭니다.</td></tr><tr><td><strong>삭제</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리를 삭제합니다. &#x3C;모든 애플리케이션>과 ‘미분류’ 카테고리는 삭제할 수 없습니다.</td></tr><tr><td><strong>이름변경</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리의 이름을 변경합니다.</td></tr><tr><td><strong>잘라내기</strong></td><td>애플리케이션 목록에서 선택한 애플리케이션을 다른 카테고리로 이동하기 위해 잘라냅니다.</td></tr><tr><td><strong>붙여넣기</strong></td><td>잘라내기 메뉴를 사용하여 복사한 애플리케이션을 현재 선택된 카테고리로 붙여 넣고 기존의 카테고리에서 삭제합니다.</td></tr><tr><td><strong>자동분류</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리에 속한 애플리케이션에 설정된 자동분류 목록을 출력하고, 자동분류를 수정하거나 삭제합니다.</td></tr><tr><td><strong>새 자동분류</strong></td><td>애플리케이션 목록에서 선택한 애플리케이션과 유사한 새 애플리케이션이 실행될 경우 해당 애플리케이션이 속한 카테고리로 자동 분류될 수 있도록 자동분류를 설정합니다.</td></tr><tr><td><strong>새로고침</strong></td><td>서버로부터 최신 정보를 가져와 화면의 애플리케이션 카테고리와 애플리케이션 목록을 업데이트합니다.</td></tr><tr><td><strong>검색</strong></td><td>특정 애플리케이션이 속한 카테고리를 검색합니다. 카테고리를 변경하거나 자동분류를 설정할 애플리케이션을 찾을 때 유용하게 사용할 수 있습니다.</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="137.72723388671875">아이콘</th><th>기능</th></tr></thead><tbody><tr><td><strong>새 카테고리</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리에 새로운 하위 카테고리를 만듭니다.</td></tr><tr><td><strong>삭제</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리를 삭제합니다. &#x3C;모든 애플리케이션>과 ‘미분류’ 카테고리는 삭제할 수 없습니다.</td></tr><tr><td><strong>이름변경</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리의 이름을 변경합니다.</td></tr><tr><td><strong>자동분류</strong></td><td>애플리케이션 카테고리 트리에서 선택한 카테고리에 속한 애플리케이션에 설정된 자동분류 목록을 출력하고, 자동분류를 수정하거나 삭제합니다.</td></tr><tr><td><strong>새 자동분류</strong></td><td>애플리케이션 목록에서 선택한 애플리케이션과 유사한 새 애플리케이션이 실행될 경우 해당 애플리케이션이 속한 카테고리로 자동 분류될 수 있도록 자동분류를 설정합니다.</td></tr><tr><td><strong>이동하기</strong></td><td>애플리케이션 목록에서 선택한 애플리케이션을 다른 카테고리로 이동합니다.</td></tr><tr><td><strong>새로고침</strong></td><td>서버로부터 최신 정보를 가져와 화면의 애플리케이션 카테고리와 애플리케이션 목록을 업데이트합니다.</td></tr><tr><td><strong>검색</strong></td><td>특정 애플리케이션이 속한 카테고리를 검색합니다. 카테고리를 변경하거나 자동분류를 설정할 애플리케이션을 찾을 때 유용하게 사용할 수 있습니다.</td></tr></tbody></table>
 
 #### <img src="../../../.gitbook/assets/image (150).png" alt="" data-size="line">애플리케이션 목록
 
 애플리케이션 카테고리 트리에서 카테고리를 클릭했을 때 해당 카테고리로 분류된 애플리케이션들의 목록이 표시되는 부분입니다. 다음 화면은 **Export Applications > Email > MS Outlook 카테고리** <img src="../../../.gitbook/assets/image (84).png" alt="" data-size="line">를 클릭했을 때 볼 수 있는 화면입니다.
 
 ![](<../../../.gitbook/assets/img_010 (25).png>)
+
+
 
 가로 스크롤바 <img src="../../../.gitbook/assets/image (85).png" alt="" data-size="line">를 사용하여 화면을 오른쪽으로 이동시키면 애플리케이션에 대한 모든 항목들을 볼 수 있습니다. 다음은 애플리케이션의 각 항목이 나타내는 정보입니다.
 
@@ -36,9 +38,9 @@
 ​\
 애플리케이션 카테고리 트리 아래에 표시되는 **자동분류 개수**<img src="../../../.gitbook/assets/image (87).png" alt="" data-size="line">는 선택된 애플리케이션 카테고리로 애플리케이션을 자동으로 분류해주는 자동분류가 설정된 개수를 나타냅니다.
 
-애플리케이션 목록에서 마우스를 우클릭하면 애플리케이션을 다른 카테고리로 옮길 수 있도록 잘라내거나 자동 분류를 설정하거나 최신 정보로 화면을 업데이트할 수 있는 컨텍스트 메뉴가 나타납니다.
+애플리케이션 목록에서 마우스를 우클릭하면 애플리케이션을 다른 카테고리로 이동, 또는 자동 분류를 설정하거나 최신 정보로 화면을 업데이트할 수 있는 컨텍스트 메뉴가 나타납니다.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/img_014 (8).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure></div>
 
 ### <mark style="color:$primary;">애플리케이션 카테고리 생성하기</mark>
 
@@ -123,17 +125,24 @@ DiskLock 기능을 사용하고 있을 때에는 사용자의 PC에서 실행하
 {% endhint %}
 
 2. 화면 우측에 해당 카테고리에 속한 애플리케이션 목록이 표시되면 카테고리를 지정할 애플리케이션을 클릭합니다.&#x20;
-3. 도구모음에서 **잘라내기**를 클릭하거나 마우스를 우클릭해서 나타난 컨텍스트 메뉴에서 **잘라내기**를 선택합니다.
+3. 도구모음에서 이동하기를 클릭하거나 마우스를 우클릭해서 나타난 컨텍스트 메뉴에서 이동하기를 선택합니다.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/img_024 (4).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure></div>
 
-4. 애플리케이션 카테고리 트리에서 잘라 낸 애플리케이션이 속할 카테고리를 클릭합니다.
-5. 도구모음에서 **붙여넣기**를 클릭하거나 마우스를 우클릭해서 나타난 컨텍스트 메뉴에서 **붙여넣기**를 선택합니다.&#x20;
 
-<div align="left"><figure><img src="../../../.gitbook/assets/img_025 (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-{% hint style="warning" icon="square-poll-horizontal" %}
-**잘라내기** 메뉴와 **붙여넣기** 메뉴 대신 Ctrl+X와 Ctrl+V 단축키를 사용하거나 마우스 드래그 앤 드롭으로 애플리케이션을 원하는 카테고리로 이동할 수 있습니다. &#x20;
+4. ‘애플리케이션 이동하기’ 창의 카테고리 트리에서, 선택한 애플리케이션이 위치할 카테고리를 클릭한 후 확인 버튼을 클릭하면 애플리케이션이 선택한 카테고리로 이동합니다.
+
+<div align="left"><figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure></div>
+
+
+
+5. 자동 분류가 등록되지 않은 경우에는 다음과 같은 안내 메시지가 표시됩니다. **예**를 클릭하면 애플리케이션 자동분류 설정 화면으로 이동하며, **아니오**를 클릭하면 카테고리 지정이 완료됩니다.
+
+<div align="left"><figure><img src="../../../.gitbook/assets/image (261).png" alt="" width="374"><figcaption></figcaption></figure></div>
+
+{% hint style="success" icon="lightbulb-exclamation-on" %}
+**이동하기** 메뉴를 사용하는 대신 마우스 드래그 앤 드롭으로 애플리케이션을 원하는 카테고리로 이동할 수 있습니다. &#x20;
 {% endhint %}
 
 #### 애플리케이션 자동분류 설정하기 <a href="#createauto" id="createauto"></a>
