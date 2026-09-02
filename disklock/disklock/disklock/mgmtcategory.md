@@ -125,21 +125,17 @@ DiskLock 기능을 사용하고 있을 때에는 사용자의 PC에서 실행하
 {% endhint %}
 
 2. 화면 우측에 해당 카테고리에 속한 애플리케이션 목록이 표시되면 카테고리를 지정할 애플리케이션을 클릭합니다.&#x20;
-3. 도구모음에서 이동하기를 클릭하거나 마우스를 우클릭해서 나타난 컨텍스트 메뉴에서 이동하기를 선택합니다.
+3. 도구모음에서 **이동하기**를 클릭하거나 마우스를 우클릭해서 나타난 컨텍스트 메뉴에서 **이동하기**를 선택합니다.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure></div>
-
-
 
 4. ‘애플리케이션 이동하기’ 창의 카테고리 트리에서, 선택한 애플리케이션이 위치할 카테고리를 클릭한 후 확인 버튼을 클릭하면 애플리케이션이 선택한 카테고리로 이동합니다.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure></div>
 
-
-
 5. 자동 분류가 등록되지 않은 경우에는 다음과 같은 안내 메시지가 표시됩니다. **예**를 클릭하면 애플리케이션 자동분류 설정 화면으로 이동하며, **아니오**를 클릭하면 카테고리 지정이 완료됩니다.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (261).png" alt="" width="374"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="success" icon="lightbulb-exclamation-on" %}
 **이동하기** 메뉴를 사용하는 대신 마우스 드래그 앤 드롭으로 애플리케이션을 원하는 카테고리로 이동할 수 있습니다. &#x20;
