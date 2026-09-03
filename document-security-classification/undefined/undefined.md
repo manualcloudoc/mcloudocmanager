@@ -45,7 +45,7 @@
 
 3. **확인**을 클릭하면, **등급 구조 설정** 페이지에서 보안등급 목록에서 삭제와 편입 결과를 확인할 수 있습니다.  다음 그림은 등급 코드가 05인 보안등급이 삭제되어 Internal (04) 등급으로 편입된 예입니다.
 
-![](<../../.gitbook/assets/img_005 (64).png>)
+<div align="left"><figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure></div>
 
 #### **문서보안등급 우선 순위 변경하기**
 
@@ -54,7 +54,7 @@
 * 우선 순위를 상위로 올리는 경우: ▲ 버튼 클릭
 * 우선 순위를 하위로 내리는 경우: ▼ 버튼 클릭
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
 2. 순위 변경을 확인하는 알림 창에서 **확인**을 클릭합니다.&#x20;
 
