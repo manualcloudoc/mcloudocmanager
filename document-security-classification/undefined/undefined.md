@@ -12,13 +12,13 @@
 1. 관리자 웹페이지에서 **일반 모듈 관리 - 문서 보안 등급 - 등급 구조 관리 - 등급 구조 설정**을 선택합니다.
 2. **등급 구조 설정** 페이지 우측 상단의 **추가** 버튼을 클릭합니다.
 
-<figure><img src="../../.gitbook/assets/img_000 (143).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure></div>
 
 3\.    **‘문서 보안 등급 추가’** 창에서 **등급명**(필수), **등급 코드**(필수), **메모**를 입력 후 **확인**을 클릭합니다.
 
-* **등급 코드**: 영문 또는 숫자만 가능하고 1\~2자리로 설정합니다. 문서중앙화 시스템에서 보안등급을 구별하는 코드로 사용되며 한번 설정하면 변경이 불가능합니다.
+* **등급 코드**: 1\~99까지의 숫자로 설정합니다. 문서중앙화 시스템에서 보안등급을 구별하는 코드로 사용되며 한번 설정하면 변경이 불가능합니다.
 
-<div align="left"><figure><img src="../../.gitbook/assets/img_001 (134).png" alt="" width="377"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure></div>
 
 등급 추가 시 기존의 보안등급 목록에 우선 순위가 가장 낮은 등급으로 추가됩니다. 등급의 우선순위를 변경해야 할 경우, 본 문서의 [**문서보안등급 우선순위 변경하기** ](undefined.md#undefined-4)목차를 참고합니다.
 
@@ -27,7 +27,7 @@
 1. **등급 구조 설정** 페이지의 보안등급 목록에서 수정할 등급 우측의 **연필** 아이콘을 클릭합니다.
 2. '**문서 보안 등급 수정**’ 창에서 **등급명**과 **메모**를 수정합니다. 이때 **등급 코드**는 수정할 수 없습니다. 수정 완료 후 **확인**을 클릭합니다.
 
-<div align="left"><img src="../../.gitbook/assets/img_003 (99).png" alt="" width="358"></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure></div>
 
 #### 문서보안등급 삭제하기
 
@@ -41,9 +41,9 @@
 1. **등급 구조 설정** 페이지의 보안등급 목록에서 삭제할 등급 우측의 **휴지통** 아이콘을 클릭합니다.
 2. ‘**문서 보안 등급 삭제**’ 창에서 **편입 등급 선택** 또는 **등급 삭제**를 선택합니다. **편입 등급 선택**의 경우, 편입할 등급을 추가로 선택합니다.
 
-<div align="left"><img src="../../.gitbook/assets/img_004 (76).png" alt="" width="386"></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure></div>
 
-3. **확인**을 클릭하면, **등급 구조 설정** 페이지에서 보안등급 목록에서 삭제와 편입 결과를 확인할 수 있습니다.  다음 그림은 등급 코드가 R, NM인 보안등급이 삭제되어 각각 Confidential(C), Unclassified(U) 등급으로 편입된 예입니다.
+3. **확인**을 클릭하면, **등급 구조 설정** 페이지에서 보안등급 목록에서 삭제와 편입 결과를 확인할 수 있습니다.  다음 그림은 등급 코드가 05인 보안등급이 삭제되어 Internal (04) 등급으로 편입된 예입니다.
 
 ![](<../../.gitbook/assets/img_005 (64).png>)
 
@@ -54,7 +54,7 @@
 * 우선 순위를 상위로 올리는 경우: ▲ 버튼 클릭
 * 우선 순위를 하위로 내리는 경우: ▼ 버튼 클릭
 
-![](<../../.gitbook/assets/img_006 (56).png>)
+<div align="left"><figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure></div>
 
 2. 순위 변경을 확인하는 알림 창에서 **확인**을 클릭합니다.&#x20;
 
@@ -64,7 +64,7 @@
 
 1. 관리자 웹페이지에서 **일반 모듈 관리 - 문서 보안 등급 - 등급 구조 관리 - 등급 구조 설정 이력**을 선택합니다.
 
-<figure><img src="../../.gitbook/assets/img_007 (48).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure></div>
 
 2. **등급 구조 설정 이력** 페이지에서 보안등급을 설정한 **기간**을 **선택**하고(필수) **설정 종류**(필수)를 선택한 후 **검색** 버튼을 클릭합니다.
 
@@ -76,4 +76,4 @@
 > - **편입**: 보안등급 삭제 시 다른 등급으로 편입시킨 경우
 > - **순위 변경**:보안등급의 **우선 순위**를 변경한 경우
 
-3. 검색한 조건에 해당하는 설정 작업의 **설정일시, 설정자 이름(ID), 등급명, 등급 코드, 메모, 등급 순위, 설정자 IP**를 확인할 수 있습니다. 등급의 우선 순위를 변경한 이력에서는 **등급 순위** 항목에서 Up/Down여부와 변경 전/후 등급을 확인할 수 있습니다. (예: Up(6->5))
+3. 검색한 조건에 해당하는 설정 작업의 **설정일시, 설정자 이름(ID), 등급명, 등급 코드, 메모, 등급 순위, 설정자 IP**를 확인할 수 있습니다. 등급의 우선 순위를 변경한 이력에서는 **등급 순위** 항목에서 Up/Down여부와 변경 전/후 등급을 확인할 수 있습니다. (예: Down(2->3))
