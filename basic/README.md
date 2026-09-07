@@ -19,11 +19,8 @@
 
 ### 관리자 웹페이지 사용하기
 
-* [**웹에서 언어 설정하기**](https://github.com/manualcloudoc/mcloudoc-user-manual/blob/main/zoho-export/markdown/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/basic/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0.md)
-* [**웹에서 로그인/로그아웃하기**](https://github.com/manualcloudoc/mcloudoc-user-manual/blob/main/zoho-export/markdown/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/basic/%EC%9B%B9%EC%97%90%EC%84%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83%ED%95%98%EA%B8%B0.md)
 * [**관리자 대시보드 기능 한눈에 보기**](undefined-2/undefined.md)
 * [**즐겨찾기 메뉴 등록 및 관리하기**](undefined-2/undefined-1.md)
-* [**연산자를 이용하여 검색 범위 좁히기**](undefined-1.md)
 * [**조회한 자료를 엑셀 파일로 저장하는 방법**](undefined-2/undefined-2.md)
 * [**부서 및 사용자에게 정책을 적용하는 방법**](undefined-2/undefined-3.md)
 
