@@ -29,7 +29,7 @@
 > - 검색 조건 좌측의   버튼을 클릭하여 검색 조건을 삭제할 수 있습니다.
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-검색 연산자를 이용하는 자세한 방법은 [**연산자를 이용하여 검색 범위 좁히기**](https://github.com/manualcloudoc/mcloudoc-user-manual/blob/main/zoho-export/markdown/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/basic/%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EA%B2%80%EC%83%89-%EB%B2%94%EC%9C%84-%EC%A2%81%ED%9E%88%EA%B8%B0.md)를 참고하세요.
+검색 연산자를 이용하는 자세한 방법은 [**연산자를 이용하여 검색 범위 좁히기**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/basicmodule/web/search)를 참고하세요.
 {% endhint %}
 
 4. 목록에서 사용자 PC에서 발생한 로그를 확인합니다. 각 로그는 3행으로 구성되어 있고 같은 형태의 엑셀 파일로 다운로드할 수 있습니다.&#x20;
