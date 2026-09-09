@@ -44,6 +44,11 @@
 
 1. **일반 모듈 관리 - Basic - 문서함 관리 - 폴더 드라이브 연결 – 연결 관리**를 클릭합니다.
 2. 좌측 상단에서 **문서함**을 선택합니다.
-3. **폴더 목록**에서 드라이브 연결을 해제할 폴더를 클릭합니다.![Idea](<../../.gitbook/assets/img_004 (24).png>)드라이브 연결 설정이 되어 있는 폴더는 <img src="../../.gitbook/assets/img_005 (20).png" alt="" data-size="line">으로 표시합니다.
+3. **폴더 목록**에서 드라이브 연결을 해제할 폴더를 클릭합니다.
+
+{% hint style="success" icon="lightbulb-exclamation-on" %}
+드라이브 연결 설정이 되어 있는 폴더는 <img src="../../.gitbook/assets/img_005 (20).png" alt="" data-size="line">으로 표시합니다.
+{% endhint %}
+
 4. **폴더 드라이브 연결 대상** 목록에서 삭제할 부서 또는 사용자의 **휴지통**을 클릭합니다.
 5. **적용** 버튼을 클릭합니다.

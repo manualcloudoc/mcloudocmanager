@@ -4,7 +4,7 @@
 
 <div align="left"><img src="../../.gitbook/assets/img_000 (134).png" alt=""></div>
 
-#### <mark style="color:$primary;">DLP 매체제어 정책 관리하기</mark>
+### <mark style="color:$primary;">DLP 매체제어 정책 관리하기</mark>
 
 DLP 매체제어 정책을 생성하고 변경하는 방법은 다음과 같습니다.
 
@@ -18,7 +18,7 @@ DLP 매체제어 정책을 생성하고 변경하는 방법은 다음과 같습�
 3. **매체 종류**별로 **액세스 허용/거부** 여부와 **로그 사용** 여부를 설정합니다.
 4. **적용** 버튼을 클릭하여 정책에 변경 사항을 반영합니다.
 
-#### <mark style="color:$primary;">매체 제어 이력 보기</mark>
+### <mark style="color:$primary;">매체 제어 이력 보기</mark>
 
 관리자는 다음과 같은 방법으로 사용자PC에 연결되는 매체에 대한 액세스 허용/차단 이력을 조회할 수 있습니다.
 

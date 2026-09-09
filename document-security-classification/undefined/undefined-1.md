@@ -2,6 +2,8 @@
 
 보안등급 구조가 설정되면 각 보안등급별로 사용자의 문서 취급 권한을 설정해야 합니다. 보안 문서의 등급별 취급 권한은 **보안등급별 사용자 권한 정책**을 통해 설정할 수 있습니다. 정책에서 설정하는 항목은 다음과 같습니다.
 
+
+
 * **문서 생성시 자동 보안등급 설정 여부 및 설정 등급**
 
 > 사용자가 중앙문서함에 새로운 문서를 생성할 때 생성된 문서에 보안등급을 자동으로 설정할지 여부와 자동 설정할 경우 해당 문서에 부여할 보안등급을 설정합니다.
@@ -36,7 +38,7 @@
 
 <table><thead><tr><th width="112">사용자</th><th width="102">적용 정책</th><th width="230">정책 내용 (목록보기 권한)</th><th>폴더 열람 결과</th></tr></thead><tbody><tr><td><strong>사용자 A</strong></td><td>정책 A</td><td>모든 보안등급에 대해 목록보기 허용</td><td>1등급 보안 문서를 포함한 모든 보안 문서와 일반 문서가 표시됨</td></tr><tr><td><strong>사용자 C</strong></td><td>정책 C</td><td>1등급 목록보기 금지, 이외 등급은 허용</td><td>1등급 보안 문서를 제외한 보안 문서와 일반 문서가 표시됨</td></tr><tr><td><strong>사용자 D</strong></td><td>미적용</td><td>해당 없음</td><td>모든 보안등급 문서를 제외한 일반문서만 표시됨</td></tr></tbody></table>
 
-#### <mark style="color:$primary;">보안등급별 사용자 권한 정책 설정하기</mark>
+### <mark style="color:$primary;">보안등급별 사용자 권한 정책 설정하기</mark>
 
 보안등급별 사용자 권한 정책을 생성하거나 기존 정책의 설정을 변경하는 방법은 다음과 같습니다.
 
@@ -118,21 +120,21 @@
 
 * **임시 권한 적용하기**
 
-> ①  **정책 적용** 페이지 우측 하단 **임시 권한**의 **설정** 버튼을 클릭합니다.
+> ① **정책 적용** 페이지 우측 하단 **임시 권한**의 **설정** 버튼을 클릭합니다.
 
 <figure><img src="../../.gitbook/assets/img_019 (8).png" alt=""><figcaption></figcaption></figure>
 
-> ②   ‘**임시 정책 설정’** 창에서 임시 권한으로 적용할 **정책**을 선택한 후 창 중앙의 화살표 버튼을 클릭합니다.
+> ② ‘**임시 정책 설정’** 창에서 임시 권한으로 적용할 **정책**을 선택한 후 창 중앙의 화살표 버튼을 클릭합니다.
 
 <div align="left"><figure><img src="../../.gitbook/assets/img_020 (5).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-> ③   **적용 기간 설정**을 위한 창이 팝업되면 해당 정책을 적용할 기간(날짜 및 시간)을 설정하고 **확인**을 클릭하면 ‘임시 정책 설정’ 창의 선택한 정책에 정책명과 적용 기간이 표시됩니다.
+> ③ **적용 기간 설정**을 위한 창이 팝업되면 해당 정책을 적용할 기간(날짜 및 시간)을 설정하고 **확인**을 클릭하면 ‘임시 정책 설정’ 창의 선택한 정책에 정책명과 적용 기간이 표시됩니다.
 
 <div align="left"><figure><img src="../../.gitbook/assets/img_021 (5).png" alt="" width="305"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src="../../.gitbook/assets/img_022 (5).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-> ④  **확인**을 클릭하면 **정책 적용** 페이지 우측 하단의 **임시 권한** 영역에 임시 정책의 이름과 적용 기간이 표시됩니다.
+> ④ **확인**을 클릭하면 **정책 적용** 페이지 우측 하단의 **임시 권한** 영역에 임시 정책의 이름과 적용 기간이 표시됩니다.
 
 <div align="left"><figure><img src="../../.gitbook/assets/img_023 (6).png" alt=""><figcaption></figcaption></figure></div>
 

@@ -4,7 +4,7 @@
 
 관리자는 웹페이지에서 개인정보 검출 파일에 대한 통계 정보를 확인할 수 있습니다. 또한, 설정에 따라 개인정보 검출 배치(batch) 작업 완료시마다 검출 통계 리포트 메일을 받아 볼 수 있습니다.
 
-#### <mark style="color:$primary;">웹페이지에서 개인정보 검출 통계 확인하기</mark>
+### <mark style="color:$primary;">웹페이지에서 개인정보 검출 통계 확인하기</mark>
 
 정해진 기간 동안의 개인정보 검출 파일의 개수, 항목별 검출 건수 및 파일 생성자별 검출 순위에 대한 통계를 확인할 수 있습니다.
 
@@ -23,7 +23,7 @@
 
 <figure><img src="../.gitbook/assets/img_002 (138).png" alt=""><figcaption></figcaption></figure>
 
-#### <mark style="color:$primary;">검출 통계 리포트 메일</mark>
+### <mark style="color:$primary;">검출 통계 리포트 메일</mark>
 
 개인정보 검출을 위한 주기적인 배치(batch) 작업 완료 시 개인정보 검출 파일에 대한 검출 통계 리포트 메일이 미리 지정된 수신자에게 발송됩니다.
 
