@@ -25,9 +25,9 @@ DiskLock 관리 기능에 대한 상세한 설명 및 전반적인 관리 방법
 * [**온라인 보안디스크 백업 관리하기**](disklock/undefined-5.md)
 * [**애플리케이션 카테고리 자동 등록 설정하기**](disklock/undefined-6.md)
 
-> #### 정책 라이브러리
+> #### 정책 라이브러리 사용하기
 >
-> * [**정책 라이브러리 소개**](disklock/undefined-7/)
+> * [**정책 라이브러리 사용하기**](disklock/undefined-7/)
 > * [**정책 라이브러리를 이용하여 로컬저장금지 정책 설정하기**](disklock/undefined-7/undefined.md)
 > * [**수동으로 로컬저장금지 정책을 표준 정책 라이브러리에 취합하기**](disklock/undefined-7/undefined-1.md)
 > * [**수동으로 표준 정책 라이브러리를 고객사 라이브러리에 반영하기**](disklock/undefined-7/undefined-2.md)
