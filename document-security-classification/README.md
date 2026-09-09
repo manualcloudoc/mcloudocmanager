@@ -4,9 +4,9 @@
 
 문서보안등급에 대한 소개는 사용자 매뉴얼 - [**문서보안등급**](https://app.gitbook.com/s/vQ0BiQsGY4PT08D7Nfay/undefined-4)을 참고합니다.
 
-### **보안등급 및 보안등급문서 관리하기**
+### **문서보안등급 및 보안등급문서 관리하기**
 
-* [**문서보안등급 관리하기**](undefined/)
+* [**문서보안등급 및 보안등급문서 관리하기**](undefined/)
 * [**문서보안등급 구조 관리하기**](undefined/undefined.md)
 * [**문서보안등급별 사용자 권한 관리하기**](undefined/undefined-1.md)
 * [**문서보안등급 변경 정책 관리하기**](undefined/undefined-2.md)
