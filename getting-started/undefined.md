@@ -208,13 +208,6 @@ hidden: true
 
 * [**관리자가 중복문서 검색 및 관리하는 방법**](../basic/undefined-19.md)
 
-### 자산화 폴더
-
-* [**자산화 폴더 설정하기**](../basic/undefined-20/undefined.md)
-* [**자산화 폴더 분류 설정하기**](../basic/undefined-20/undefined-1.md)
-* [**자산화 폴더 설정 현황 보기**](../basic/undefined-20/undefined-2.md)
-* [**자산화 폴더 설정 이력 보기**](../basic/undefined-20/undefined-3.md)
-
 ## **Document Security Classification (문서보안등급 모듈)**
 
 ### **보안등급 및 보안등급문서 관리하기**

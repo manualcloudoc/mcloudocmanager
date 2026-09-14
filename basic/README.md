@@ -141,10 +141,3 @@
 
 * [**관리자가 중복문서 검색 및 관리하기**](undefined-19.md)
 
-### 자산화 폴더
-
-* [**자산화 폴더 설정하기**](undefined-20/undefined.md)
-* [**자산화 폴더 분류 설정하기**](undefined-20/undefined-1.md)
-* [**자산화 폴더 설정 현황 보기**](undefined-20/undefined-2.md)
-* [**자산화 폴더 설정 이력 보기**](undefined-20/undefined-3.md)
-
