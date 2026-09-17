@@ -111,7 +111,7 @@ DiskLock 기능을 사용하고 있을 때에는 사용자의 PC에서 실행하
 <img src="../../../.gitbook/assets/image (95).png" alt="" data-size="line">\~<img src="../../../.gitbook/assets/image (96).png" alt="" data-size="line"> 단계는 자동으로 수행되고 <img src="../../../.gitbook/assets/image (97).png" alt="" data-size="line">단계는 사용자가 수행해야 합니다. <img src="../../../.gitbook/assets/image (98).png" alt="" data-size="line">단계에서 직접 원하는 카테고리로 애플리케이션을 이동시켜 분류하는 방법과 애플리케이션이 특정 카테고리에 자동으로 분류될 수 있도록 자동분류를 설정하는 방법에 대해 차례로 살펴봅니다.&#x20;
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-애플리케이션 **자동분류**는 DiskLock 콘솔 외에도 웹의 **PC 보안 모듈 관리 > DiskLock > 로컬저장금지 > 애플리케이션 카테고리 자동등록** 메뉴를 사용하여 설정할 수 있습니다. 이 메뉴를 사용하여 자동분류를 등록하는 방법은 [**애플리케이션 카테고리 자동등록 설정하기**](../undefined-6.md)를 참고합니다.
+애플리케이션 **자동분류**는 DiskLock 콘솔 외에도 웹의 **PC 보안 모듈 관리 > DiskLock > 로컬저장금지 > 애플리케이션 카테고리 자동등록** 메뉴를 사용하여 설정할 수 있습니다. 이 메뉴를 사용하여 자동분류를 등록하는 방법은 [**애플리케이션 카테고리 자동등록 설정하기**](../undefined-5.md)를 참고합니다.
 {% endhint %}
 
 #### 직접 분류할 애플리케이션 카테고리 지정하기 <a href="#direct" id="direct"></a>

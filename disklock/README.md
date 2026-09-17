@@ -7,7 +7,7 @@ DiskLock 관리 기능에 대한 상세한 설명 및 전반적인 관리 방법
 * [**관리자가 파일수집 정책 관리하는 방법**](disklock/undefined.md)
 * [**애플리케이션 카테고리 소개**](disklock/undefined-1.md)
 * [**로컬저장금지 정책 소개**](disklock/undefined-2.md)
-* [**로컬저장금지 정책 및 탐색기 복사/이동 정책 수정 이력 보기**](disklock/undefined-3.md)
+* [**로컬저장금지 정책 및 탐색기 복사/이동 정책 수정 이력 보기**](disklock/undefined-6.md)
 
 > #### DiskLock 콘솔 사용하기
 >
@@ -21,9 +21,9 @@ DiskLock 관리 기능에 대한 상세한 설명 및 전반적인 관리 방법
 > * [**DiskLock 콘솔에서 보안디스크 정책 관리하기**](disklock/disklock/disklock-5.md)
 > * [**DiskLock 콘솔에서 탐색기 복사/이동 정책 관리하기**](disklock/disklock/disklock-6.md)
 
-* [**보안디스크 관리하기**](disklock/undefined-4.md)
-* [**온라인 보안디스크 백업 관리하기**](disklock/undefined-5.md)
-* [**애플리케이션 카테고리 자동 등록 설정하기**](disklock/undefined-6.md)
+* [**보안디스크 관리하기**](disklock/undefined-3.md)
+* [**온라인 보안디스크 백업 관리하기**](disklock/undefined-4.md)
+* [**애플리케이션 카테고리 자동 등록 설정하기**](disklock/undefined-5.md)
 
 > #### 정책 라이브러리 사용하기
 >
