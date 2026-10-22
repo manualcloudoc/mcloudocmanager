@@ -61,14 +61,14 @@ DiskLock 콘솔 화면은 보안 기능을 하나의 정책으로 통합하는 *
 <div align="left"><figure><img src="../../../.gitbook/assets/img_006 (38).png" alt="" width="252"><figcaption></figcaption></figure></div>
 
 {% hint style="warning" icon="square-poll-horizontal" %}
-통합 정책은 웹에서 **PC 보안 모듈 관리 - 모듈 통합정책 적용 – 정책 적용**메뉴를 사용하여 설정할 수 있습니다. 이 메뉴를 사용하여 통합 정책을 생성하고 적용하는 방법은 [**모듈 통합정책 생성 및 적용하기**](../../undefined/undefined.md)를 참고합니다.&#x20;
+통합 정책은 웹에서 **PC 보안 모듈 관리 - 모듈 통합정책 적용 – 정책 적용** 메뉴를 사용하여 설정할 수 있습니다. 이 메뉴를 사용하여 통합 정책을 생성하고 적용하는 방법은 [**모듈 통합정책 생성 및 적용하기**](../../undefined/undefined.md)를 참고합니다.&#x20;
 {% endhint %}
 
 #### <mark style="color:$primary;">DiskLock 콘솔 종료하기</mark>
 
 DiskLock 콘솔을 통한 보안 정책들의 설정 작업이 끝나면 다음과 같은 방법으로 DiskLock 콘솔을 종료합니다. &#x20;
 
-1. DiskLock 콘솔 화면의 메뉴 트리에서 맨 아래에 있는**종료** 메뉴를 클릭합니다.&#x20;
+1. DiskLock 콘솔 화면의 메뉴 트리에서 맨 아래에 있는 **종료** 메뉴를 클릭합니다.&#x20;
 
 <div align="left"><img src="../../../.gitbook/assets/img_007 (31).png" alt="" width="322"></div>
 
@@ -78,7 +78,7 @@ DiskLock 콘솔을 통한 보안 정책들의 설정 작업이 끝나면 다음�
 
 #### <mark style="color:$primary;">DiskLock 콘솔 화면 살펴보기</mark>
 
-DiskLock 콘솔 화면은 <img src="../../../.gitbook/assets/image (142).png" alt="" data-size="line">**메뉴 카테고리**, <img src="../../../.gitbook/assets/image (143).png" alt="" data-size="line">**도구모음**,<img src="../../../.gitbook/assets/image (144).png" alt="" data-size="line">**작업 영역**으로 구성되어 있습니다. 화면에는 보이지 않지만 작업 영역에서 마우스를 우클릭했을 때 상황에 맞는 메뉴들이 나타나는 <img src="../../../.gitbook/assets/image (145).png" alt="" data-size="line">**컨텍스트 메뉴**도 제공됩니다. DiskLock 콘솔 화면 중 메뉴 카테고리를 제외한 나머지 부분은 메뉴 카테고리에서 선택한 메뉴에 따라 변경됩니다.
+DiskLock 콘솔 화면은 <img src="../../../.gitbook/assets/image (142).png" alt="" data-size="line">**메뉴 카테고리**, <img src="../../../.gitbook/assets/image (143).png" alt="" data-size="line">**도구모음**,<img src="../../../.gitbook/assets/image (144).png" alt="" data-size="line">**작업 영역**으로 구성되어 있습니다. 화면에는 보이지 않지만 작업 영역에서 마우스를 우클릭 했을 때 상황에 맞는 메뉴들이 나타나는 <img src="../../../.gitbook/assets/image (145).png" alt="" data-size="line">**컨텍스트 메뉴**도 제공됩니다. DiskLock 콘솔 화면 중 메뉴 카테고리를 제외한 나머지 부분은 메뉴 카테고리에서 선택한 메뉴에 따라 변경됩니다.
 
 ![](<../../../.gitbook/assets/img_013 (5).png>)
 
